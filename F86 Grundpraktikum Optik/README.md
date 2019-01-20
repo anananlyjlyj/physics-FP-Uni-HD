@@ -26,14 +26,9 @@
 
 #### 2. Mach-Zehnder interferometer
 
-- Pockels cell @0°: 
-  - [Oszilloscope picture](https://github.com/anananlyjlyj/physics-FP-Uni-HD/blob/master/F86%20Grundpraktikum%20Optik/tek00000.png)
-  - [data](https://github.com/anananlyjlyj/physics-FP-Uni-HD/blob/master/F86%20Grundpraktikum%20Optik/Pockel0.txt)
-- Pockels cell @90°: 
-  - [data](https://github.com/anananlyjlyj/physics-FP-Uni-HD/blob/master/F86%20Grundpraktikum%20Optik/Pockel90.txt)
-- Pockels cell @-90°: 
-  - [Oszilloscope picture](https://github.com/anananlyjlyj/physics-FP-Uni-HD/blob/master/F86%20Grundpraktikum%20Optik/tek00001.png)
-  - [data](https://github.com/anananlyjlyj/physics-FP-Uni-HD/blob/master/F86%20Grundpraktikum%20Optik/Pockel_90.txt)
+- [Pockels cell @0°](https://github.com/anananlyjlyj/physics-FP-Uni-HD/blob/master/F86%20Grundpraktikum%20Optik/tek00000.png) & [data](https://github.com/anananlyjlyj/physics-FP-Uni-HD/blob/master/F86%20Grundpraktikum%20Optik/Pockel0.txt)
+- Pockels cell @90° & [data](https://github.com/anananlyjlyj/physics-FP-Uni-HD/blob/master/F86%20Grundpraktikum%20Optik/Pockel90.txt)
+- [Pockels cell @-90°](https://github.com/anananlyjlyj/physics-FP-Uni-HD/blob/master/F86%20Grundpraktikum%20Optik/tek00001.png) & [data](https://github.com/anananlyjlyj/physics-FP-Uni-HD/blob/master/F86%20Grundpraktikum%20Optik/Pockel_90.txt)
 
 ### § Polarization Manipulation / Intensity Modulation
 

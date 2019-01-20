@@ -7,3 +7,4 @@
 
 - Auswertung: [FP Mechanik und Vakuum](https://github.com/anananlyjlyj/physics-FP-Uni-HD/blob/master/F70%20Mechanik%20und%20Vakuum/FP%20Mechanik%20und%20Vakuum.ipynb)
 
+![Aufbau](https://github.com/anananlyjlyj/physics-FP-Uni-HD/blob/master/F70%20Mechanik%20und%20Vakuum/Vakuum.jpg)

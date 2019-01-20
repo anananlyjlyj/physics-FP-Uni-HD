@@ -20,7 +20,7 @@ Protocol.pdf
 
 ## Teil III: Aufbau eines PID-Reglers zur Drehzahlregelung eines Motors
 
-![PID-Regler](C:\Users\Yajie\Documents\physics-FP-Uni-HD\E01 Grundpraktikum Elektronik\PID-Regler.jpg)
+![PID-Regler](https://github.com/anananlyjlyj/physics-FP-Uni-HD/blob/master/E01%20Grundpraktikum%20Elektronik/PID-Regler.jpg)
 
 - Inbetriebnahme der Schaltung - Überprüfung der Schaltung: tek0 - tek2.png
 - PID-Regelung

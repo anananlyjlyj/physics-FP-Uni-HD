@@ -1,10 +1,22 @@
 # physics-FP-Uni-HD
-Here we collect our protocol and evaluation of physical FPs@Uni HD. 
+Here we collect our protocol and evaluation of physical FPs (advance lab courses) @Uni HD. 
 
 [FP Instructions](https://www.physi.uni-heidelberg.de/Einrichtungen/FP/versuche/anleitungen.php)
 
-List of FPs(advance lab course) we chose: 
+
+
+## Foreword
+
+For the evaluation we usually use Jupyter Notebook. To make life easier this extension is recommended: [Github-nbextensions](https://github.com/ipython-contrib/jupyter_contrib_nbextensions). Among them we recommend to use these extensions: LaTeX environments, AutoSaveTime, Codefolding, Codefolding in Editor, Collapsible Headings, Hinterland, Snippets, spellchecker, Table of Contents, Variable Inspector.
+
+Further tips & tricks for Jupyter Notebook see [Bringing the best out of Jupyter Notebooks for Data Science](https://towardsdatascience.com/bringing-the-best-out-of-jupyter-notebooks-for-data-science-f0871519ca29)
+
+
+
+## List of FPs we chose
+
 ### 22.10.2018@INF 501
+
 - [x]  E01: Grundpraktikum Elektronik (Basic Electronics)
 - [x]  Evaluation
 ### 19.11.2018@INF 501

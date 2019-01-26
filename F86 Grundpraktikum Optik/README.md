@@ -1,14 +1,12 @@
 # F86 Grundpraktikum Optik
 
 - [F85 Instruction](https://www.physi.uni-heidelberg.de/Einrichtungen/FP/anleitungen/F85.pdf)
-
 - Literature: 
   - [Fundamentals_of_Photonics_6: Polarisation Optics](https://github.com/anananlyjlyj/physics-FP-Uni-HD/blob/master/F86%20Grundpraktikum%20Optik/Fundamentals_of_Photonics_----_(6_POLARIZATION_OPTICS).pdf) 
   - [Fundamentals_of_Photonics_7: Photonic Crystal Optics](https://github.com/anananlyjlyj/physics-FP-Uni-HD/blob/master/F86%20Grundpraktikum%20Optik/Fundamentals_of_Photonics_----_(7_PHOTONIC-CRYSTAL_OPTICS).pdf)
-
 - [Protocol](https://github.com/anananlyjlyj/physics-FP-Uni-HD/blob/master/F86%20Grundpraktikum%20Optik/Protocol.pdf)
-
 - Evaluation: [FP Optics](https://github.com/anananlyjlyj/physics-FP-Uni-HD/blob/master/F86%20Grundpraktikum%20Optik/FP%20Optics.ipynb)
+- Bonus: Play with interference, Mach-Zehnder interferometer yourself! [Quantum Game](http://quantumgame.io/)
 
 ## Part I: Polarization optics
 

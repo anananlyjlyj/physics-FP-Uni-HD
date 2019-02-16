@@ -8,9 +8,12 @@
 
 - Applications of NMR
 
-  - [Spectroscopy of ^31P](http://www.nmr.uni-duesseldorf.de/main/menergie.html) -> energy balance when transforming ATP into ADP in cells
+  - [Spectroscopy of ^31P](http://www.nmr.uni-duesseldorf.de/main/menergie.html): study energy balance when transforming ATP into ADP in living cells
   - [MRI brain atlases](https://www.uantwerpen.be/en/research-groups/bio-imaging-lab/research/mri-atlases/)
   - [Digital fish library](http://www.digitalfishlibrary.org/)
+  - MRI
+    
+    <img src="https://github.com/anananlyjlyj/physics-FP-Uni-HD/blob/master/F61%20Nuclear%20Magnetic%20Resonance/Banana.jpg" width="300" height="300">
 
 - [Protocol]
 
@@ -73,7 +76,7 @@
 
 Associate five probes A, B, C, D and E to the substances:
 
-
+<img src="https://github.com/anananlyjlyj/physics-FP-Uni-HD/blob/master/F61%20Nuclear%20Magnetic%20Resonance/substances.png" width="280" height="170">
 
 ## Part III: Imaging with NMR
 

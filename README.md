@@ -27,7 +27,7 @@ Further tips & tricks for Jupyter Notebook see [Bringing the best out of Jupyter
 - [ ]  Evaluation
 ### 07.01.2019@INF 501
 - [x]  F70/F71: Mechanik und Vakuum (Mechanics and Vacuum)
-- [ ]  Evaluation
+- [x]  Evaluation
 ### 20.02.2019@INF 226
 - [ ]  F61/F62: Kernresonanzspektroskopie (Nuclear Magnetic Resonance)
 - [ ]  Evaluation

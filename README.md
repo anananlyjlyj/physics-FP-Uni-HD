@@ -24,10 +24,10 @@ Further tips & tricks for Jupyter Notebook see [Bringing the best out of Jupyter
 - [x]  Evaluation
 ### 10.12.2018@INF 501
 - [x]  F86: Optik Grundpraktikum (Basic Optics)
-- [ ]  Evaluation
+- [x]  Evaluation
 ### 07.01.2019@INF 501
 - [x]  F70/F71: Mechanik und Vakuum (Mechanics and Vacuum)
-- [x]  Evaluation
+- [ ]  Evaluation
 ### 20.02.2019@INF 226
 - [ ]  F61/F62: Kernresonanzspektroskopie (Nuclear Magnetic Resonance)
 - [ ]  Evaluation

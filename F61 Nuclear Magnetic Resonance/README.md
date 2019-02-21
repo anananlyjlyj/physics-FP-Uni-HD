@@ -33,9 +33,9 @@
 
 - Define the 90° and 180° pulses for 1 pulse every 3 seconds, using probe 1 :
 
-  Puls I is a 90° pulse when its time duration is set to: 
+  Puls I is a 90° pulse when its time duration is set to: ~ 1.29 $\mu s$
 
-  Puls II is a 180° pulse when its time duration is set to:
+  Puls II is a 180° pulse when its time duration is set to: 
 
 ## Part I: Relaxation time
 
@@ -51,28 +51,20 @@ where $T_2​$ is the spin-spin relaxation time.
 
 * Puls change time: $\tau$
 
-- Single measurement: number of data points 
-- Many measurements: number of measurements 
-
 #### 2. Measurement T_2 by Carr-Purcell sequence
 
 - Puls change time: $\tau$
 
-- Single measurement: number of data points 
-- Many measurements: number of measurements 
 
 The time evolution of longitudinal magnetization is given by eq. 18 on the script
 $$
 M_{\parallel}(t)=M^{0}(1-2e^{-\frac{t}{T_1}})
 $$
-where $T_1$ is the spin-lattice relaxation time.
+where $T_1​$ is the spin-lattice relaxation time.
 
 #### 3. Measurement T_1
 
-* Puls change time: $\tau​$
-* Single measurement: number of data points 
-
-- Many measurements: number of measurements 
+* Puls change time: $\tau$
 
 ### § Systematics of relaxation times for probes 1 and 3
 
@@ -117,21 +109,21 @@ Then we do the measurements for probes A, B, C, D and E. Read from data on Figur
 
 where we use the intensity of the measured frequency response to separate Toluol and p-xylol, which have the same chemical shifts.
 
-The peaks we measure ? correspond to what we expect. 
+Only the peak we measure for FCH_2-CN do not correspond to what we expect. We expect only one peak for 2 H-atoms. However, we observe 2 peaks with almost same amplitude close to each other. It can be explained by the interaction of F-atom with protons, one parallel and one antiparallel.
 
 ## Part III: Imaging with NMR
 
 ### § One dimensional imaging in vertical direction
 
-* 15mm oil in glass tube
-* 50mm water in glass tube
-* Teflon structure immersed in oil in glass tube
-* 15mm sand + 4mm oil in glass tube
+* [15mm oil in glass tube](https://github.com/anananlyjlyj/physics-FP-Uni-HD/blob/master/F61%20Nuclear%20Magnetic%20Resonance/1d_image/Oil_15ml.txt)
+* [50mm oil in glass tube](https://github.com/anananlyjlyj/physics-FP-Uni-HD/blob/master/F61%20Nuclear%20Magnetic%20Resonance/1d_image/Oil_50_middle.txt)
+* [Teflon structure immersed in oil in glass tube]((https://github.com/anananlyjlyj/physics-FP-Uni-HD/blob/master/F61%20Nuclear%20Magnetic%20Resonance/1d_image/Oil_Teflon.txt))
+* 15mm sand + 4mm oil in glass tube: \1d_image\Oil_sand_*.txt
 
 ### § Two dimensional imaging
 
-* 15mm oil in glass tube
-* A peanut with shell in glass tube
-* A pecan nut
-* A piece of celery
+* [15mm oil in glass tube](https://github.com/anananlyjlyj/physics-FP-Uni-HD/blob/master/F61%20Nuclear%20Magnetic%20Resonance/2d_image/Oil_vertical_15.png)
+* [A peanut with shell in glass tube]((https://github.com/anananlyjlyj/physics-FP-Uni-HD/blob/master/F61%20Nuclear%20Magnetic%20Resonance/2d_image/penut_5avg_2_3d.png))
+* [A piece of celery](https://github.com/anananlyjlyj/physics-FP-Uni-HD/blob/master/F61%20Nuclear%20Magnetic%20Resonance/2d_image/celery_medium_3d.png)
+* [A hot peper]((https://github.com/anananlyjlyj/physics-FP-Uni-HD/blob/master/F61%20Nuclear%20Magnetic%20Resonance/2d_image/pepper_2mm.png))
 

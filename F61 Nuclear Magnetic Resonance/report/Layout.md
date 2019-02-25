@@ -30,4 +30,4 @@ Figure 2.3: Computer used in part I and II, and probes for part II
 
 Figure 2.4: Example LabVIEW program in part III 
 
-<img src="https://github.com/anananlyjlyj/physics-FP-Uni-HD/blob/master/F61%20Nuclear%20Magnetic%20Resonance/displaying_2d_image_labview_block.png" width="300" height="400">
+<img src="https://github.com/anananlyjlyj/physics-FP-Uni-HD/blob/master/F61%20Nuclear%20Magnetic%20Resonance/displaying_2d_image_labview_block.PNG" width="300" height="400">

@@ -55,7 +55,50 @@ $$
 $$
 If the time interval is chosen such that $\alpha = 90°$ , then $\vec M$ is rotated into a perpendicular component $M_{\perp}$ along the y-axis. Such a pulse is called a 90° pulse. Similarly, we define 180° pulse which results in magnetization antiparallel to the static field $\vec B_0$.
 
-### 2. NMR signal
+### 2. Relaxation time
 
-### 3. 
+#### 2.1 Bloch equations
+
+
+
+#### 2.2 Spin-spin relaxation $T_2$ by spin echo method
+
+#### 2.3 Spin-spin relaxation $T_2$ by Carr-Purcell sequence
+
+#### 2.4 Spin-lattice relaxation $T_1$
+
+
+
+### 3. Chemical shift
+
+The Larmor frequency is magnetic field dependent, which can varies from molecule to molecule due to a contribution of the electron orbitals $\delta \vec B​$. The additional magnetic field is proportional to external magnetic field:
+$$
+\delta \vec B = -\sigma \vec B_0
+$$
+where $\sigma$ characterises the magnetic shielding of the external field $\vec B_0$. Thus with the total magnetic field $\vec B = \vec B_0 + \delta \vec B$ the shielding factor can be determined if the modified Larmor frequency $\omega_i$ is measured:
+$$
+\omega_i = \omega_L (1-\sigma_i)
+$$
+where $\omega_L$ is the free Larmor frequency. 
+
+Chemical shift is defined as the difference of the shielding factor between subject substance and a reference substance, which in our case is Tetra-Methyl-Silan (TMS):
+$$
+\delta_i = \sigma_i -\sigma_{TMS} = \frac{\omega_L-\omega_i}{\omega_L}-\frac{\omega_L - \omega_{TMS}}{\omega_L}=\frac{\omega_{TMS} - \omega_{i}}{\omega_L}
+$$
+For our experimental purpose the chemical shifts of some organic compounds relative to TMS is given as below:
+
+Figure 1.1: Chemical shifts of compounds relative to TMS
+
+<img src="https://github.com/anananlyjlyj/physics-FP-Uni-HD/blob/master/F61%20Nuclear%20Magnetic%20Resonance/substances.png" width="280" height="170">
+
+### 4. Imaging with NMR
+
+#### 4.1 One dimensional imaging 
+
+* Frequency coding
+* Phase coding
+
+#### 4.2 Two dimensional imaging
+
+
 

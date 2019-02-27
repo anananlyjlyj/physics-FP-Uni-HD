@@ -15,7 +15,7 @@
     
     <img src="https://github.com/anananlyjlyj/physics-FP-Uni-HD/blob/master/F61%20Nuclear%20Magnetic%20Resonance/Banana.jpg" width="300" height="300">
 
-- [Protocol]
+- [Protocol](https://github.com/anananlyjlyj/physics-FP-Uni-HD/blob/master/F61%20Nuclear%20Magnetic%20Resonance/Protocol.pdf)
 
   Experimental devices: Bruker minispec p20 for parts I & II, [Bruker minispec mq7.5](https://www.bruker.com/products/mr/td-nmr/minispec-mq-series/mq75-large-seed-analyzer/overview.html) for parts III.
 
@@ -68,10 +68,10 @@ where $T_1​$ is the spin-lattice relaxation time.
 
 ### § Systematics of relaxation times for 2 probes
 
-| Probes\relaxation time | T_2 by spin echo | T_2 by Carr-Purcell | T_1  |
-| ---------------------- | ---------------- | ------------------- | ---- |
-| Gr 500                 |                  |                     |      |
-| Gr 600                 |                  |                     |      |
+| Probes\relaxation time | T_2 by spin echo [ms] | T_2 by Carr-Purcell [ms] | T_1 by spin echo [ms] |
+| ---------------------- | --------------------- | ------------------------ | --------------------- |
+| Gr 500                 | 62.4                  | 66.1                     | 68.1                  |
+| Gr 600                 | 78.6                  | 84.0                     | 99.2                  |
 
 
 
@@ -95,9 +95,9 @@ Then we do the measurements for probes A, B, C, D and E. Read from data on Figur
 
 <img src="https://github.com/anananlyjlyj/physics-FP-Uni-HD/blob/master/F61%20Nuclear%20Magnetic%20Resonance/substances.png" width="280" height="170">
 
-| A             | B      | C       | D                 | E           |
-| ------------- | ------ | ------- | ----------------- | ----------- |
-| fluoroacetone | toluol | p-xylol | fluoroacetonitril | acetic acid |
+| A             | B       | C           | D                 | E      |
+| ------------- | ------- | ----------- | ----------------- | ------ |
+| fluoroacetone | p-xylol | acetic acid | fluoroacetonitril | toluol |
 
 where we use the intensity of the measured frequency response to separate Toluol and p-xylol, which have the same chemical shifts. Since -CH_3 replaces one of the H-atom on benzene in p-xylol, we expect two peaks which has less amplitude difference, compared with two peaks of toluol.
 

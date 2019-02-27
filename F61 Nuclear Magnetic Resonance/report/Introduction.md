@@ -8,13 +8,13 @@ When a sample containing N protons is placed in an external magnetic field, the 
 $$
 \vec M= \frac{1}{V} \sum_i \vec{\mu_i}
 $$
-The magnetic dipole moment of nuclei is related to the spin $\vec J​$:
+The magnetic dipole moment of nuclei is related to the spin $\vec J$:
 $$
 \vec \mu = \hbar \gamma \vec J
 $$
-where $\gamma​$ is the gyromagnetic ratio of the nucleus. For protons $\gamma = 2.6752 \cdot 10^8 sec^{-1}Tesla^{-1}​$.
+where $\gamma$ is the gyromagnetic ratio of the nucleus. For protons $\gamma = 2.6752 \cdot 10^8 sec^{-1}Tesla^{-1}$.
 
-In the ground state, where energy is minimized, $N_+​$ protons in the sample have magnetic dipole moment parallel to the magnetic field, $N_-​$ antiparallel, where ​$N=N_+ + N_-​$. The occupation number ​$N_+​$ and $N_-​$ follow Dirac statistics, but can here be approximated by a Boltzmann distribution:
+In the ground state, where energy is minimized, $N_+$ protons in the sample have magnetic dipole moment parallel to the magnetic field, $N_-$ antiparallel, where ​$N=N_+ + N_-$. The occupation number ​$N_+$ and $N_-$ follow Dirac statistics, but can here be approximated by a Boltzmann distribution:
 $$
 N_{\pm}=N_0 e^{-\frac{E_0 + \Delta E}{kT}}
 $$
@@ -49,7 +49,7 @@ Hence $\vec M_{\perp}​$ precesses around $\vec B_0​$ with Larmor frequency $
 
 #### 1.2 Generation of general magnetisation
 
-Consider the ground state magnetization $\vec M$ parallel to $\vec B_0$, pointing in z-direction. A sinusoidal voltage of frequency $\omega_{HF}$ is applied on the along x-direction oriented coil, resulting in an induced magnetic field $ B_1$, which is longitudinally polarized along x-direction. Then $\vec M$ precesses around the x-axis. During a time interval $\Delta t$ the angle $\alpha​$ of precession is then:
+Consider the ground state magnetization $\vec M$ parallel to $\vec B_0$, pointing in z-direction. A sinusoidal voltage of frequency $\omega_{HF}$ is applied on the along x-direction oriented coil, resulting in an induced magnetic field $ B_1$, which is longitudinally polarized along x-direction. Then $\vec M$ precesses around the x-axis. During a time interval $\Delta t$ the angle $\alpha$ of precession is then:
 $$
 \alpha = \gamma B_1 \Delta t
 $$
@@ -81,7 +81,7 @@ $$
 $$
 where $\omega_L$ is the free Larmor frequency. 
 
-Chemical shift is defined as the difference of the shielding factor between subject substance and a reference substance, which in our case is Tetra-Methyl-Silan (TMS):
+Chemical shift is defined as the difference of the shielding factor between subject substance and a reference substance, which in our case is Tetra-Methyl-Silan (TMS). It has units ppm(part per million):
 $$
 \delta_i = \sigma_i -\sigma_{TMS} = \frac{\omega_L-\omega_i}{\omega_L}-\frac{\omega_L - \omega_{TMS}}{\omega_L}=\frac{\omega_{TMS} - \omega_{i}}{\omega_L}
 $$

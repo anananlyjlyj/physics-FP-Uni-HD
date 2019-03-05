@@ -1,9 +1,14 @@
 # F20 Magneto-optical trap
 
 - [F20 instruction](https://www.physi.uni-heidelberg.de/Einrichtungen/FP/anleitungen/F20.pdf)
+
 - Literature:
+
 - [Protocol]
+
 - Data and evaluation as below
+
+  Note: when measure and save the data, we found accidently 1 redundant data in Part II, which might be a double measurement of $\Delta \nu=-12$ or $-14​$ . Same thing happened for data in Part III, which might be a double measurement of time difference between 11 and 27.
 
 ## Introduction
 
@@ -50,15 +55,15 @@ required velocity for atoms. -> $dn_0=P_0 dn$ density of ground state atoms as f
 
 * For pump beam: 
   * Far from the natural resonance ($|\nu-\nu_0|>>\Gamma$): $P_0-P_1=1$, only for atoms $v=v_{pump}$.
-  * Near resonance frequency: A strong resonant laser field($I$ large) causes such rapid transitions in both directions that $P_0=P_1$ -> "saturate" the transition
+  * Near resonance frequency: A strong resonant laser field($I​$ large) causes such rapid transitions in both directions that $P_0=P_1​$ -> "saturate" the transition
 
 * For probe beam: 
 
-  * far from the natural resonance: absorption for $v=v_{probe}=-v_{pump}$.  Also because absorption $\propto (P_0-P_1)$, which $\approx1$ except for $v=v_{pump}$. 
+  * far from the natural resonance: absorption for $v=v_{probe}=-v_{pump}​$.  Also because absorption $\propto (P_0-P_1)​$, which $\approx1​$ except for $v=v_{pump}​$. 
 
     Pump beam not affect probe beam absorption.
 
-  *  $\nu=\nu_0,v_{probe}=v_{pump}=0$ hole burning for v near 0. -> absorption coefficient vs. the laser frequency offset from resonance: Doppler-broadened profile with **Lamb dip** at $\nu=\nu_0​$ (increasing intensity leads to power broadening of the Lamb dip)
+  *  $\nu=\nu_0,v_{probe}=v_{pump}=0​$ hole burning for v near 0. -> absorption coefficient vs. the laser frequency offset from resonance: Doppler-broadened profile with **Lamb dip** at $\nu=\nu_0​$ (increasing intensity leads to power broadening of the Lamb dip)
 
 ### Multilevel effects
 

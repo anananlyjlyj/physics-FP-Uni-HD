@@ -8,17 +8,19 @@
 
 ##### 1. Measurement T_2 by spin echo method
 
-- 
+We select pulse sequence I-II and $\tau =10​$ ms. (What is repetition rate 1/3 Hz?)
 
 ##### 2. Measurement T_2 by Carr-Purcell sequence
 
-- 
+
 
 ##### 3. Measurement T_1
 
-- 
+
 
 #### 2.2 Systematics of relaxation times for 2 probes
+
+According to the description in last section we do the measurements for probes Gr 500 and Gr 600. 
 
 Table 3.1: 
 

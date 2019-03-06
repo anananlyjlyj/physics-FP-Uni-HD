@@ -24,13 +24,13 @@ Further tips & tricks for Jupyter Notebook see [Bringing the best out of Jupyter
 - [x]  Evaluation
 ### 10.12.2018@INF 501
 - [x]  F86: Optik Grundpraktikum (Basic Optics)
-- [ ]  Evaluation
+- [x]  Evaluation
 ### 07.01.2019@INF 501
 - [x]  F70/F71: Mechanik und Vakuum (Mechanics and Vacuum)
 - [ ]  Evaluation
 ### 20.02.2019@INF 226
-- [ ]  F61/F62: Kernresonanzspektroskopie (Nuclear Magnetic Resonance)
-- [ ]  Evaluation
+- [x]  F61/F62: Kernresonanzspektroskopie (Nuclear Magnetic Resonance)
+- [ ]  Evaluation: short report
 ### 04.03.2019@INF 226
 - [ ]  F20: Magnetooptische Falle (Magneto-optical Trap)
 - [ ]  Evaluation
@@ -39,4 +39,4 @@ Further tips & tricks for Jupyter Notebook see [Bringing the best out of Jupyter
 - [ ]  Evaluation
 ### 25.03.19@Königstuhl
 - [ ]  F30: Stellare CCD-Photometrie (Stellar CCD photometry)
-- [ ]  Evaluation
+- [ ]  Evaluation: long report

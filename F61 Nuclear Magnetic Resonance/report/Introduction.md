@@ -92,13 +92,25 @@ $$
 
 The excitation energy of excited states is contributed by spin-lattice contribution and spin-spin contribution. The former indicates the interaction of the magnetic dipoles with the external magnetic field (eq. 6). The latter indicates the interaction of two magnetic dipoles depends on the orientation of the dipoles. The antiparallel orientation is energetically favourable. A transverse magnetization hence contains the corresponding interaction energy when many magnetic dipoles are oriented parallel to each other.
 
-TODO: dephasing of transverse magnetization
+As illustrated in the following figure, consider a 90° pulse at time $t=0$. The pulse generates a transverse magnetization $M_{\perp}$ along the y-axis, which precess around the static field $\vec B_0$ with a Larmor frequency $\omega_L$. Protons at different locations will have slightly different $\omega_L$ due to the inhomogeneity of the field. For example, protons at location A precess clockwise with larger frequency $\omega_A> \omega_B$ than protons at location B due to larger magnetic field at A. At time $t=\tau$ they acquire a phase difference, i.e. protons at A are ahead of protons at B. At time $t=\tau$ a 180° pulse is applied, where $\tau$ is much shorter than the relaxation time $T_2$.   The magnetic dipoles are then rotated by 180° around the x-axis. The dipole orientation of the protons at locations A and B is reversed, i.e. protons at B are ahead of protons at A. The time duration of 180° pulse is short as compared to $\tau$ and hence can be neglected. With further precession the protons at A and B are in phase again after another time interval $\tau$. All the magnetic dipoles in phase build up the magnetization $M_{\perp}$ at time $t=2\tau$.
+
+Figure 1.1: Spin echo method - dephasing of transverse magnetization
+
+<img src="https://github.com/anananlyjlyj/physics-FP-Uni-HD/blob/master/F61%20Nuclear%20Magnetic%20Resonance/spin_echo.png" width="280" height="170">
+
+An example signal shows as follows with $\tau=10​$ ms. Decrease at $t<5​$ s is the decay of the transverse magnetization due to loss of coherence as explained above. Then the spin echo builds up after applying 180° pulse and reaches its maximum at time $t=2\tau​$. Measuring maxima for different $\tau​$ and using eq.(12) one can get the decay curve.
+
+<img src="https://github.com/anananlyjlyj/physics-FP-Uni-HD/blob/master/F61%20Nuclear%20Magnetic%20Resonance/example.png" width="280" height="170">
+
+The spin echo method has limitations when measuring the decay curve at large $\tau$. The protons can move to different locations due to molecular diffusion before the 180° pulse is applied. The average Larmor frequencies in the time intervals $0<t<\tau$ and $\tau<t<2\tau$ can hence be different due to field inhomogeneities. In that case only partial coherence is achieved at $t=2\tau$, which means reduced signals with a correspondingly reduced value for $T_2$. 
 
 #### 2.3 Spin-spin relaxation $T_2$ by Carr-Purcell sequence
 
+To minimize the effects of molecular diffusion and field inhomogeneities the Carr-Purcell sequence is used. For $t\leq2\tau$ the protons experience the same procedure as in spin echo method. The system then starts to loose the coherence again due to field inhomogeneities. At time $t=3\tau$ another 180° pulse is applied, hence the system is phase coherent at $t=4\tau$. This pattern repeats when one always applies 180° pulses at odd multiples time of $\tau$. The measurement of $T_2​$ in that case is closer to the true value as compared to spin echo method.
+
 #### 2.4 Spin-lattice relaxation $T_1$
 
-
+The spin lattice measurement starts with a 180° pulse. The produced magnetization is antiparallel to the external $\vec B_0$ field, which does not produce a signal. At $t=\tau$ the 90° pulse is applied,$M_{\parallel}$ is then transformed to a transverse magnetization, which will induce a signal in the coil. The signal is proportional to $M_{\parallel}$ at $t=\tau$.  Measuring maxima for different $\tau​$ and using eq.(13) one can get the decay curve.
 
 ### 3. Chemical shift
 
@@ -118,7 +130,7 @@ $$
 $$
 For our experimental purpose the chemical shifts of some organic compounds relative to TMS is given as below:
 
-Figure 1.1: Chemical shifts of compounds relative to TMS
+Figure 1.2: Chemical shifts of compounds relative to TMS
 
 <img src="https://github.com/anananlyjlyj/physics-FP-Uni-HD/blob/master/F61%20Nuclear%20Magnetic%20Resonance/substances.png" width="280" height="170">
 

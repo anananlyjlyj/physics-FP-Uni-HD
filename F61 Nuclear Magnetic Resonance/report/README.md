@@ -4,11 +4,17 @@ The following should be included in report:
 
 - [ ] Titel, Autoren, Abstract
 - [ ] Einleitung: physikalischer Themenkreis, Fragestellung
+  - [x] relaxation time
+  - [x] chemical shift
+  - [ ] imaging
 - [x] die Versuchsanordnung
-- [ ] die Messdaten in geigneter Form
+- [x] die Messdaten in geigneter Form
 - [ ] Auswertung der Messungen und Fehlerabschätzung
+  - [ ] relaxation time
+  - [x] chemical shift
+  - [ ] imaging
 - [ ] Diskussion der Messergebnisse und Zusammenfassung
-- [ ] eine sinnvolle Referenzenliste. 
+- [ ] eine sinnvolle Referenzenliste
 
 
 

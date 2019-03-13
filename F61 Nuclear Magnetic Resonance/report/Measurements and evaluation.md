@@ -8,21 +8,37 @@
 
 ##### 1. Measurement T_2 by spin echo method
 
-We select pulse sequence I-II and $\tau =10​$ ms. (What is repetition rate 1/3 Hz?)
+We insert probe into the magnet, select pulse sequence I-II and $\tau =20$ ms and active the pulse sequence. We use the LabVIEW application "T2_meas.vi" on the computer.
+
+For "single measurement" we enter the measuring time $400​$ ms and spin echo time $2\tau = 40​$ ms. To concentrate only on the essential part around the maximum we choose del T for $15​$ ms. Then we adjust 2 cursors on figure of Fourier transform of spectrum in $2\tau \pm \Delta t​$ range, so that only the single peak, noise excluded, of amplitude is taken into calculation. Then we run "many measurements"for $10​$ times. In that way we get the first data point $(40, 5.75)​$. 
+
+Then we do the same for $\tau =40,60,80,100,120, 140$ ms.
+
+In the end we click the button "fit" to draw the decay curve passing through those data points and read the fit parameters. 
+
+We get the measurement result as Appendix ... 
 
 ##### 2. Measurement T_2 by Carr-Purcell sequence
 
+Similar to spin echo method, this time we use $\tau = 20$ ms for probe Ga 500 and enter the measuring time $800$ ms. The maximum appears at $t=\tau+2\tau=60$ ms and then at $t = 100, 140, 180$ ms. (?)
 
+We get the measurement result as Appendix...
+
+For probe Ga 600 we use $\tau = 30$ ms. The maximum appears at $t=\tau+2\tau=90$ ms and then at $t = 150, 210, 270$ ms.
+
+We get the measurement result as Appendix...
+
+Then we adjust the strength of the magnetic field to ensure the working frequency is around 1000 Hz and do the measurements again. We get the measurement result as Appendix...
 
 ##### 3. Measurement T_1
 
-
+TODO
 
 #### 2.2 Systematics of relaxation times for 2 probes
 
 According to the description in last section we do the measurements for probes Gr 500 and Gr 600. 
 
-Table 3.1: 
+Table 3.1: Relaxation time measurements
 
 | Probes\relaxation time | T_2 by spin echo [ms] | T_2 by Carr-Purcell [ms] | T_1 by spin echo [ms] |
 | ---------------------- | --------------------- | ------------------------ | --------------------- |
@@ -37,7 +53,7 @@ First we use a probe to get familiar with the measurement. We can see that the i
 
 We do the measurements for probes A+, B, B+, C, C+, D, D+ and E, E+ (probe A was broken in previous experiment). See Appendix ...(Name) The LabVIEW program shows us the measured amplitude of signal changing with time and plot its Fourier-transform in frequency space next to it. In the lower part of the program we give the approximate range of each peak we see in Fourier plot. The program makes a fit using the data and calculate ppm from the position of each peak.(How did the program calculate it?) Comparing two spectra for every substance, we find out that the mixed reference substance in *+ probe corresponds to the most left peak in every spectrum of *+ probe. Subsequently we calculate the difference of ppm given by the LabVIEW program. 
 
-Table 3.2: 
+Table 3.2: Chemical shift between 0. peak and other peaks
 
 | relative to TMS peak(0. peak) | A+   | B+   | C+   | D+   | E+   |
 | ----------------------------- | ---- | ---- | ---- | ---- | ---- |
@@ -48,6 +64,8 @@ Table 3.2:
 We use data on Figure 1.1 to match the chemical shift with possible compounds. We associate five probes to the substances: (Do we need to illustrate in detail?)
 
 <img src="https://github.com/anananlyjlyj/physics-FP-Uni-HD/blob/master/F61%20Nuclear%20Magnetic%20Resonance/substances.png" width="280" height="170">
+
+Table 3.3: Chemical substances identification
 
 | A             | B       | C           | D                 | E      |
 | ------------- | ------- | ----------- | ----------------- | ------ |

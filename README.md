@@ -27,12 +27,12 @@ Further tips & tricks for Jupyter Notebook see [Bringing the best out of Jupyter
 - [x]  Evaluation
 ### 07.01.2019@INF 501
 - [x]  F70/F71: Mechanik und Vakuum (Mechanics and Vacuum)
-- [ ]  Evaluation
+- [x]  Evaluation
 ### 20.02.2019@INF 226
 - [x]  F61/F62: Kernresonanzspektroskopie (Nuclear Magnetic Resonance)
 - [ ]  Evaluation: short report
 ### 04.03.2019@INF 226
-- [ ]  F20: Magnetooptische Falle (Magneto-optical Trap)
+- [x]  F20: Magnetooptische Falle (Magneto-optical Trap)
 - [ ]  Evaluation
 ### 12.03.2019@INF 226
 - [ ]  F13: Lebensdauer von Myonen (Muon Lifetime)

@@ -101,6 +101,14 @@ required velocity for atoms. -> $dn_0=P_0 dn$ density of ground state atoms as f
 
 
 
+### Sisyphus cooling
+
+a type of [laser cooling](https://en.wikipedia.org/wiki/Laser_cooling) of atoms used to reach temperatures below the [Doppler cooling limit](https://en.wikipedia.org/wiki/Doppler_cooling_limit).
+
+Sisyphus cooling can be achieved by shining two counter-propagating laser beams with [orthogonal](https://en.wikipedia.org/wiki/Orthogonality) [polarization](https://en.wikipedia.org/wiki/Polarization_(waves)) onto an atom sample. The two interfering  beams create a standing wave with a polarization gradient that alternates between [σ+, π and σ− polarisation](https://en.wikipedia.org/wiki/S_and_p_polarizations). Atoms moving through the potential landscape along the direction of the standing wave lose [kinetic energy](https://en.wikipedia.org/wiki/Kinetic_energy) as they move to a potential maximum, at which point [optical pumping](https://en.wikipedia.org/wiki/Optical_pumping) moves them to a lower-energy state, thus ridding them of the potential energy they carried. 
+
+Repeated cycles of converting kinetic energy to potential energy, and subsequent loss of this potential energy via optical pumping, allow the atoms to reach temperatures orders of magnitude below those available through simple [Doppler cooling](https://en.wikipedia.org/wiki/Doppler_cooling). 
+
 ## Part I: Doppler free spectroscopy
 
 ### § Familiarization with basic monitoring and controlling units in the optics lab

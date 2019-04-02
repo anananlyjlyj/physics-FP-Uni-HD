@@ -1,2 +1,9 @@
 *.ipynb_checkpoints/
 *.bak
+*.aux
+*.bbl
+*.blg
+*.log
+*.gz
+*.tks
+*.toc

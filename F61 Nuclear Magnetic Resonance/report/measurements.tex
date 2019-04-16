@@ -1,0 +1,186 @@
+\section{Measurements and evaluation}\label{measurements-and-evaluation}
+
+\subsection{Calibration high frequencypulses}\label{calibration-high-frequency-pulses}
+
+\subsection{Measurement of relaxation time}\label{relaxation-time}
+
+\subsubsection{Measurement T\_2 by spin echo method}\label{t_2-by-spin}
+
+We insert probe into the magnet, select pulse sequence I-II and
+\tau = 20 ms and active the pulse sequence. We use the LabVIEW
+application "T2_meas.vi" on the computer.
+
+For "single measurement" we enter the measuring time 400​ ms and
+spin echo time $2\tau = 40​$ ms. To concentrate only on the essential
+part around the maximum we choose del T for 15​ ms. Then we adjust 2
+cursors on figure of Fourier transform of spectrum in
+$2\tau \pm \Delta t$ range, so that only the single peak, noise
+excluded, of amplitude is taken into calculation. Then we run ``many
+measurements''for $10$ times. In that way we get the first data point
+$(40, 5.75)$.
+
+Then we do the same for $\tau = 40,60,80,100,120, 140$ ms.
+
+In the end we click the button "fit" to draw the decay curve passing
+through those data points and read the fit parameters.
+
+We get the measurement result as Appendix \ldots{}
+
+\subsubsection{Measurement T\_2 by Carr-Purcell sequence}\label{t_2-carr}
+
+Similar to spin echo method, this time we use $tau = 20$ ms for probe
+Ga 500 and enter the measuring time 800 ms. The maximum appears at
+$t= \tau + 2 \tau = 60$ ms and then at t = 100, 140, 180 ms. (?)
+
+We get the measurement result as Appendix \ldots{}
+
+For probe Ga 600 we use \tau = 30 ms. The maximum appears at
+$t=\tau+2\tau=90$ ms and then at t = 150, 210, 270 ms.
+
+We get the measurement result as Appendix\ldots{}
+
+Then we adjust the strength of the magnetic field to ensure the working
+frequency is around 1000 Hz and do the measurements again. We get the
+measurement result as Appendix\ldots{}
+
+\subsubsection{Measurement T\_1}\label{measurement-t_1}
+
+TODO
+
+\subsubsection{Systematics of relaxation times for 2 probes}\label{2-probes}
+
+According to the description in last section we do the measurements for
+probes Gr 500 and Gr 600.
+
+Table 3.1: Relaxation time measurements
+
+\begin{longtable}[]{@{}llll@{}}
+\toprule
+\begin{minipage}[b]{0.22\columnwidth}\raggedright\strut
+Probes\relaxation time\strut
+\end{minipage} & \begin{minipage}[b]{0.21\columnwidth}\raggedright\strut
+T\_2 by spin echo {[}ms{]}\strut
+\end{minipage} & \begin{minipage}[b]{0.24\columnwidth}\raggedright\strut
+T\_2 by Carr-Purcell {[}ms{]}\strut
+\end{minipage} & \begin{minipage}[b]{0.21\columnwidth}\raggedright\strut
+T\_1 by spin echo {[}ms{]}\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.22\columnwidth}\raggedright\strut
+Gr 500\strut
+\end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\raggedright\strut
+62.4\strut
+\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright\strut
+66.1\strut
+\end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\raggedright\strut
+68.1\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright\strut
+Gr 600\strut
+\end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\raggedright\strut
+78.6\strut
+\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright\strut
+84.0\strut
+\end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\raggedright\strut
+99.2\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\subsection{Chemical shift}\label{chemical-shift}
+
+\subsubsection{3.1 Substances identification}\label{substances-identification}
+
+First we use a probe to get familiar with the measurement. We can see
+that the intensity is distributed in broad range because of
+inhomogeneity of the magnetic field. Its width is determined by? Then we
+use the pressure air to put the probe into rotation and repeat the
+measurement. We observe clearly some peaks, since in that way the
+inhomogeneity is cancelled out.
+
+We do the measurements for probes A+, B, B+, C, C+, D, D+ and E, E+
+(probe A was broken in previous experiment). See Appendix \ldots{}(Name)
+The LabVIEW program shows us the measured amplitude of signal changing
+with time and plot its Fourier-transform in frequency space next to it.
+In the lower part of the program we give the approximate range of each
+peak we see in Fourier plot. The program makes a fit using the data and
+calculate ppm from the position of each peak.(How did the program
+calculate it?) Comparing two spectra for every substance, we find out
+that the mixed reference substance in \emph{+ probe corresponds to the
+most left peak in every spectrum of }+ probe. Subsequently we calculate
+the difference of ppm given by the LabVIEW program.
+
+Table 3.2: Chemical shift between 0. peak and other peaks
+
+\begin{longtable}[]{@{}llllll@{}}
+\toprule
+relative to TMS peak(0. peak) & A+ & B+ & C+ & D+ & E+\tabularnewline
+\midrule
+\endhead
+1. peak chemical shift & 2.2 & 2.1 & 2.0 & 3.9 & 2.6\tabularnewline
+2. peak chemical shift & 3.9 & 6.9 & 11.6 & 6.3 & 7.5\tabularnewline
+3. peak chemical shift & 6.3 & & & &\tabularnewline
+\bottomrule
+\end{longtable}
+
+We use data on Figure 1.1 to match the chemical shift with possible
+compounds. We associate five probes to the substances: (Do we need to
+illustrate in detail?)
+
+Table 3.3: Chemical substances identification
+
+\begin{longtable}[]{@{}lllll@{}}
+\toprule
+A & B & C & D & E\tabularnewline
+\midrule
+\endhead
+fluoroacetone & p-xylol & acetic acid & fluoroacetonitril &
+toluol\tabularnewline
+\bottomrule
+\end{longtable}
+
+where we use the intensity of the measured frequency response to
+separate Toluol and p-xylol, which have the same chemical shifts because
+of same compounds. Since -CH\_3 replaces one of the H-atom on benzene in
+p-xylol, we expect two peaks which have less amplitude difference,
+compared with two peaks of toluol.
+
+Only the peak we measure for FCH\_2-CN do not correspond to what we
+expect. We expect only one peak for 2 H-atoms in -CH\_2-, because the
+resonance frequency for fluor is much higher than the range of our
+measurement. However, we observe 2 peaks with almost same amplitude
+close to each other. It can be explained by the spin-spin interaction of
+F-atom with protons, one parallel and one antiparallel.
+
+\subsubsection{Characteristics quantity of the experiment}\label{characteristics}
+
+From the measured data we can infer some information about the magnetic
+field inside the coil and about energy.
+
+The external magnetic field \(B_0\) can be calculated from the Larmor
+frequency \(\nu_L\), which is assumed to roughly equal the high
+frequency \(\nu_{HF}=19.8 MHz\)(woher?), since their difference the
+working frequency \(\nu_w\approx 500 Hz\) is relative small: \[
+B_0 =\frac{\omega_L}{\gamma}=\frac{f_L \cdot 2 \pi}{\gamma}=\frac{19.8\cdot 10^6s^{-1}\cdot 2 \pi}{2.6752\cdot10^8 s^{-1}T^{-1}}\approx 0.48 T
+\] The induced magnetic field \(B_1\) can be calculated from the pulse
+time difference we set to achieve 90° pulse \(\Delta t=1.29\mu s\) ,
+which we read from oscilloscope: \[
+B_1 = \frac{\alpha}{\gamma\cdot\Delta t}=\frac{\pi/2}{2.6752\cdot10^8 s^{-1}T^{-1}\cdot 1.29\cdot10^{-6}s}\approx 4.3 mT
+\] The energy resolution of our measurements can be calculated from the
+FWHM of a peak \(\Delta f_{FWHM}=19.9 Hz\) taken from the first peak of
+A+ using 2 cursors in the program: \[
+\Delta E_{res} = \Delta f_{FWHM} \cdot h \approx 8\cdot10^{-14} eV
+\] The energy difference for the different fluor states can be
+calculated from the frequency difference of second peak and third peak
+of A+ \(\Delta f=48 Hz\): \[
+\Delta E_{dipol}=\Delta f \cdot h\approx 2\cdot10^{-13} eV
+\]
+
+\subsection{Imaging with NMR}\label{imaging-with-nmr}
+
+\subsubsection{1d imaging}\label{d-imaging}
+
+First we measure the image of 15mm oil (Appendix \ldots{}).
+
+\subsubsection{2d imaging}\label{d-imaging-1}

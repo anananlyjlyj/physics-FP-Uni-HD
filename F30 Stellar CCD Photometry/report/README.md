@@ -1,4 +1,4 @@
-# F61 Nuclear Magnetic Resonance
+# F30 Stellar CCD Photometry
 
 The following should be included in report:
 

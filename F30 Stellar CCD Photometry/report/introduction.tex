@@ -1,1 +1,56 @@
-\section{Introduction}
+\section{Fundamentals of astronomical observation} \label{intro}
+\subsection{Basics of CCD detectors} \label{ccd}
+\subsubsection{CCDs}
+Instead of photographic plates in earlier days people now widely use \textit{Charged coupled devices} (CCDs) for the detection of optical radiation, in visible light cameras and in modern telescopes. The working principle of CCD is as follows: Electrons produced by photoelectric effect are collected in the potential walls of the capacitors on a two-dimensional array of pixels made of semiconductors capacitors. The collected charges are first read out by being shifted column by column and sent to counting device (output register) at the end of each horizontal line, which is consisted of a series of electrodes. Then the signal is amplified and digitalized by an \textit{Analogue digital converter} (ADU). After calibrating and analysing numerical data one can reconstruct the distribution of observed astronomical objects.
+
+\subsubsection{Advantages and important characteristics of CCDs}
+CCDs are useful and powerful in following aspects:
+
+\paragraph{Good spatial resolution}
+  The resolution and the field of an image taken by a CCD depend on its number of pixels. With large amount of pixels in small volume of CCDs one can see the details at the surface of the studied object.
+  
+\paragraph{Very high quantum efficiency over large spectral window}
+  CCDs are sensitive to the radiation in a large wavelength domain. The fraction of detected photons on CCD reaches more than 50\% ($>$ 80\% at certain wavelengths), which enables the detection of very faint objects. 
+  
+\paragraph{High dynamic range with very low noise}
+  The \textit{signal to noise ratio}(S/N) is an essential characteristic, especially when observing a faint object. The noise induced by the readout transistor is nowadays reduced to the order of 10 electrons per pixel and second, which indicates the faintest object that can be detected. The brightest object that can be detected depend on the  capacity of pixels to collect photoelectrons before they saturate, which increases with the individual pixel size. The dynamic range represents the maximum possible ratio between the fluxes of the faintest objects and the brightest ones, which is small for CCDs, so that people can detect objects with high difference in magnitudes at the same time. 
+  
+\paragraph{Very good linearity}
+  There exists good linear relation between measured signal and incoming photon flux, which is proportional to the exposure time, with a large saturation threshold and no requirement on minimum exposure time. CCDs are linear to an accuracy of about 0.1\% within their dynamical range.
+  
+\paragraph{High photometric precision and a reliable rigidity}
+  Since CCDs are made of solid elements and the position of each pixel is fixed in a rigid way during the production, there's usually no physical distortion and the sensitivity of CCDs is stable in time.
+
+\subsection{Basics of astronomical data} \label{astrodata}
+\subsubsection{Data-influencing effects and corresponding measures}
+There are certain effects that influence data quality, people come up with different measures to deal with them:
+\paragraph{Noise and saturation}
+Despite of large dynamic range of CCDs it is not always possible to simultaneously assure a good S/N for weak objects of interest while not saturating very bright stars. Thus it is important to select exposure time carefully depending on purpose of observation.
+
+\paragraph{Extrema of data}
+A certain amount of pixels on the detector is "dead", i.e. produce no physically significant signal at all. The amount and distribution of pixels of this kind stays the same over time. Additionally some other pixels are activated by cosmic rays such as electrons, $\gamma$-rays, muons, etc. Around the impact position the pixels are saturated or show high numbers of counts. The distribution of these pixels is random and the number of them depends on integration time. To get rid of these extrema people use method called "dithering" or "jittering" by taking several exposures (at least 5) and the telescope is moved slightly between each exposure. The multiple frames are then aligned and the median of each pixel of the combined image is determined. With this method the S/N is also improved without saturating brighter sources.
+
+\paragraph{Diffraction by aperture}
+Light is diffracted when passing through apertures, the diffraction effects increase with decreasing aperture size. The degree of spreading (blurring) of a point object is a measure for the quality of an imaging systems, which is described with \textit{Point spread function} (PSF). For a diffraction-limited optical system operating in the absence of aberrations, i.e. a perfect lens with a uniformly illuminated circular aperture, the PSF is the Airy disc, a bright central region surrounded by concentric rings. In astronomy the Airy disc is used to determine the quality and alignment of the optical components of a telescope.
+
+\subsubsection{Data reduction}
+\paragraph{Bias}
+\paragraph{Dark current}
+\paragraph{Flat fields}
+\paragraph{Standard stars}
+
+\subsection{Basics of photometry} \label{photometry}
+\subsubsection{Magnitudes}
+\paragraph{Apparent magnitude}
+\paragraph{Absolute magnitude}
+\paragraph{Barometric magnitude}
+\subsubsection{Observation of a star}
+
+\subsubsection{Filter system}
+Johnson filter system 
+\paragraph{color index}
+\paragraph{color correction}
+
+\subsection{Relevant astronomy}
+\subsubsection{The Hertzsprung-Russel-Diagramm}
+\subsubsection{Globular clusters}

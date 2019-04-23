@@ -8,7 +8,7 @@
 
 - Data and evaluation as below
 
-  Note: when measure and save the data, we found accidently 1 redundant data in Part II, which might be a double measurement of $\Delta \nu=-12$ or $-14​$ . Same thing happened for data in Part III, which might be a double measurement of time difference between 11 and 27.
+  Note: when measure and save the data, we found accidently 1 redundant data in Part II, which might be a double measurement of $\Delta \nu=-12$ or $-14$ . Same thing happened for data in Part III, which might be a double measurement of time difference between 11 and 27.
 
 ## Introduction
 
@@ -27,11 +27,11 @@ Using Doppler shifts, for the atoms:
 $$
 \nu_0'=\nu_0(1+\frac{v}{c})
 $$
-Integrate over all velocities in weak laser field($P_0-P_1=1​$):
+Integrate over all velocities in weak laser field($P_0-P_1=1$):
 $$
 \kappa=\kappa_0e^{-(\nu-\nu_0)^2/2\sigma_\nu^2},\kappa_0=h\nu n_0 \alpha_0 \sqrt\frac{m}{2\pi k_B T}\frac{c}{\nu_0}\frac{\pi \Gamma}{2},\sigma_{\nu}=\nu_0 \sqrt\frac{k_B T}{mc^2}
 $$
-Populations with spontaneous emission rate $\gamma$, absorption rate $\alpha​$:
+Populations with spontaneous emission rate $\gamma$, absorption rate $\alpha$:
 $$
 P_0-P_1=\frac{1}{1+2 I/I_{sat}}, I_{sat}=\frac{\gamma}{\alpha} \Rightarrow \kappa=\kappa_0 \sqrt{P_0-P_1}e^{-(\nu-\nu_0)^2/2\sigma_\nu^2}
 $$
@@ -55,15 +55,15 @@ required velocity for atoms. -> $dn_0=P_0 dn$ density of ground state atoms as f
 
 * For pump beam: 
   * Far from the natural resonance ($|\nu-\nu_0|>>\Gamma$): $P_0-P_1=1$, only for atoms $v=v_{pump}$.
-  * Near resonance frequency: A strong resonant laser field($I​$ large) causes such rapid transitions in both directions that $P_0=P_1​$ -> "saturate" the transition
+  * Near resonance frequency: A strong resonant laser field($I$ large) causes such rapid transitions in both directions that $P_0=P_1$ -> "saturate" the transition
 
 * For probe beam: 
 
-  * far from the natural resonance: absorption for $v=v_{probe}=-v_{pump}​$.  Also because absorption $\propto (P_0-P_1)​$, which $\approx1​$ except for $v=v_{pump}​$. 
+  * far from the natural resonance: absorption for $v=v_{probe}=-v_{pump}$.  Also because absorption $\propto (P_0-P_1)$, which $\approx1$ except for $v=v_{pump}$. 
 
     Pump beam not affect probe beam absorption.
 
-  *  $\nu=\nu_0,v_{probe}=v_{pump}=0​$ hole burning for v near 0. -> absorption coefficient vs. the laser frequency offset from resonance: Doppler-broadened profile with **Lamb dip** at $\nu=\nu_0​$ (increasing intensity leads to power broadening of the Lamb dip)
+  *  $\nu=\nu_0,v_{probe}=v_{pump}=0$ hole burning for v near 0. -> absorption coefficient vs. the laser frequency offset from resonance: Doppler-broadened profile with **Lamb dip** at $\nu=\nu_0$ (increasing intensity leads to power broadening of the Lamb dip)
 
 ### Multilevel effects
 
@@ -71,7 +71,7 @@ required velocity for atoms. -> $dn_0=P_0 dn$ density of ground state atoms as f
 
   $V$-system and $\Lambda$-system: here V-system
 
-  Without pump beam: net absorption = Gaussian($\nu_1​$) + Gaussian($\nu_2​$). If separation small compared to the Doppler width -> single broadened absorption profile
+  Without pump beam: net absorption = Gaussian($\nu_1$) + Gaussian($\nu_2$). If separation small compared to the Doppler width -> single broadened absorption profile
 
   With pump beam: dip at $\nu_1,\nu_2$ and at crossover frequency $\nu_{12}=(\nu_1+\nu_2)/2$ 
 
@@ -85,7 +85,7 @@ required velocity for atoms. -> $dn_0=P_0 dn$ density of ground state atoms as f
 
   $^{(2S+1)}L_J$  with total orbital angular momentum $\vec L$, total electronic spin angular momentum $\vec S$, total electronic angular momentum $\vec J$ , in the L-S coupling regime $\vec J= \vec L + \vec S$.
 
-  Rb = [Kr] $5 S^1​$ and thus ground state $^2 S_{1/2}​$, excited states $^2 P_{1/2}, ^2P_{3/2}​$ 
+  Rb = [Kr] $5 S^1$ and thus ground state $^2 S_{1/2}$, excited states $^2 P_{1/2}, ^2P_{3/2}$ 
 
 * Hyperfine structure levels
 
@@ -113,28 +113,126 @@ Repeated cycles of converting kinetic energy to potential energy, and subsequent
 
 ### § Familiarization with basic monitoring and controlling units in the optics lab
 
+* relevant infos: Doppler free spectroscopy and laser cooling.
+  * Basic laser absorption spectroscopy
+  2. Saturated absorption and Doppler free spectroscopy
+  3. Energy levels of Rubidium
+  4. Frequency modulation (FM) spectroscopy
+
 * D2-line spectra of both Rubidium isotopes: 85, 87
-* Spectrum of cooler laser, repumper laser
 
+  measure spectrum of cooler laser and repumper laser -> analyse best of the 2
 
+  **TODO Evaluation:**
+
+  * [All peaks]([https://raw.githubusercontent.com/anananlyjlyj/physics-FP-Uni-HD/master/F20%20Magneto-optical%20Trap/Part%20I/All_Peaks.bmp](https://raw.githubusercontent.com/anananlyjlyj/physics-FP-Uni-HD/master/F20 Magneto-optical Trap/Part I/All_Peaks.bmp))
+
+  * To perform the frequency measurements you have to calibrate the horizontal axis, by converting it from time to frequency for 1 dataset and apply to the others.
+
+  * From 2-transitions-combined datasets, by fitting each absorption profile with a Gaussian and comparing the distance between the centers of the two profiles, measure the multiplet separation
+
+  * From single-transition datasets measure the natural **line width** of the hyperfine lines from the Lamb dips and the **temperature** of the atomic sample from the Doppler profile.
+
+    fit each absorption profile with a Gaussian, subtract it, then fit the real absorption dips with a Lorentzian (only the ones that have a good SNR). To have a better fit, it
+    is suggested to mask the areas where the Lorentzian dips are. Extract from the FWHM of the Doppler valleys the temperature of the atomic sample and compare it with the Doppler broadening expected for a thermal gas. From the Lorentzian fit extract the line width and compare it to the theoretical natural line width of the transitions
+
+  * From these recorded Doppler free spectra you can measure the D2 line hyperfine energy level separation
+
+    find in the derivative the six zero crossings and you have to compare their frequency separation (it's a relative frequency measurement!) with the theoretically expected  frequency separations between the hyperfine transitions
+
+    
 
 ## Part II: Laser cooling
 
+* relevant infos
+  * Radiative optical forces
+  * Optical molasses
+  * Magneto-Optical Trap
+  * Temperature regimes accessible in laser cooling
+  * Trap loading
+  * Temperature measurement via release and recapture
+
 ### 1. Beam path characterization
+
+* For the cooling beam:
+  * the power going to the spectroscopy
+  * the power going to the MOT beam path
+  * the power before the AOM
+  * the power after the diaphragm which selects the first order of the AOM
+    diffraction (if possible optimize it by slightly adjusting the AOM angle)
+  * the power before the fiber
+  * the power after the fiber (with repumping beam blocked)
+* For the repumping beam:
+  * the power going to the spectroscopy
+  * the power going to the MOT beam path
+  * the power before the fiber
+  * the power after the fiber (with cooling beam blocked)
+
+For each beam separately you should try to optimize the fiber coupling via a procedure called "beam walking" if the power is not above 10.5 mW for the cooler or 2 mW for the repumper.
 
 ### 2. Alignment of the MOT beams
 
+use the first mirror to align the beam to the first viewport and the second mirror for align the beam to the center of the second viewport. 
+
 ### 3. Laser locking
+
+Cooler laser is locked on the crossover between F = 3 → F = 2 and F = 3 → F = 4 levels, while the Repumper on the F = 2 → F = 3 line
 
 ### 4. Magnetic coils
 
+choose one direction and increase the current slowly up to a value of 6 A.
+
 ### 5. Achievement of the MOT
+
+see a MOT with the IR finger camera on the black and white TV screen
 
 ## Part III: Optimization of fluorescence signal & Measurement of loading characteristics of the MOT at different detunings and magnetic field gradients
 
 ### 1. Improvement of the MOT and of the fluorescence signal
 
+adjust the photo diode to the fluorescence light emitted by the MOT by slightly improving the alignment of the mirror. 
+
+play a little bit with the current of the z-Compensation coils, until you'll find the position which allows you to trap the biggest cloud with the strongest fluorescence.  Then try to adjust the power balance between the x-y-z MOT beams until you reach the highest fluorescence signal. Estimate
+the average laser intensity in each of the six laser beams, it should be close to 3 mW.
+
+Why should the detuning of the laser be at a fixed value for this procedure?
+
 ### 2. Acquisition of the loading curve at different detunings and magnetic field gradients
 
+measure the loading curve for different configurations: vary the detuning from 14 MHz to the
+resonance in steps of 2 MHz with respect to the F = 3 → F = 4 transition and at each detuning vary the gradient by changing the current through the quadrupole coils between 4.5A and 6A in steps of 0.5A.
+
+Where do you see the best loading rate?
+
+[Data](https://github.com/anananlyjlyj/physics-FP-Uni-HD/tree/master/F20 Magneto-optical Trap/Part II)
+
+### 3. Evaluation
+
+[Eva](https://github.com/anananlyjlyj/physics-FP-Uni-HD/blob/master/F20 Magneto-optical Trap/Part II.ipynb)
+
+**TODO Discussion:**
+
+* Are the loss coefficients constant? What would it mean if they were dependent on the atom number? What is the behaviour in detuning?
+* Plots interpretation
+
 ## Part IV: Release and recapture measurements
+
+to estimate the temperature of the MOT
+
+Choose the detuning and the magnetic field gradient that gave you the best loading rate
+
+* 5 traces at such short duration that you don't see a change in the atom number
+* 5 at such durations that you loose all the atoms
+* 20 traces at durations in between to sample properly the expansion behavior
+
+[Data](https://github.com/anananlyjlyj/physics-FP-Uni-HD/tree/master/F20 Magneto-optical Trap/Part III)
+
+[Evaluation](https://github.com/anananlyjlyj/physics-FP-Uni-HD/blob/master/F20%20Magneto-optical%20Trap/Part%20III.ipynb)
+
+**TODO Discussion:**
+
+* Is the calculated temperature compatible with the one that you expected to achieve?
+* Plots interpretation
+
+
 

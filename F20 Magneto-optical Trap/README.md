@@ -115,9 +115,9 @@ Repeated cycles of converting kinetic energy to potential energy, and subsequent
 
 * relevant infos: Doppler free spectroscopy and laser cooling.
   * Basic laser absorption spectroscopy
-  2. Saturated absorption and Doppler free spectroscopy
-  3. Energy levels of Rubidium
-  4. Frequency modulation (FM) spectroscopy
+  * Saturated absorption and Doppler free spectroscopy
+  * Energy levels of Rubidium
+  * Frequency modulation (FM) spectroscopy
 
 * D2-line spectra of both Rubidium isotopes: 85, 87
 
@@ -125,7 +125,7 @@ Repeated cycles of converting kinetic energy to potential energy, and subsequent
 
   **TODO Evaluation:**
 
-  * [All peaks]([https://raw.githubusercontent.com/anananlyjlyj/physics-FP-Uni-HD/master/F20%20Magneto-optical%20Trap/Part%20I/All_Peaks.bmp](https://raw.githubusercontent.com/anananlyjlyj/physics-FP-Uni-HD/master/F20 Magneto-optical Trap/Part I/All_Peaks.bmp))
+  * [All peaks](https://raw.githubusercontent.com/anananlyjlyj/physics-FP-Uni-HD/master/F20 Magneto-optical Trap/Part I/All_Peaks.bmp)
 
   * To perform the frequency measurements you have to calibrate the horizontal axis, by converting it from time to frequency for 1 dataset and apply to the others.
 

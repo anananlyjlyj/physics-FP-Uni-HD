@@ -33,11 +33,11 @@ Further tips & tricks for Jupyter Notebook see [Bringing the best out of Jupyter
 - [ ]  Evaluation: short report
 ### 04.03.2019@INF 226
 - [x]  F20: Magnetooptische Falle (Magneto-optical Trap)
-- [ ]  Evaluation
+- [x]  Evaluation
 ### 12.03.2019@INF 226
 - [x]  F13: Lebensdauer von Myonen (Muon Lifetime)
 - [ ]  Evaluation
 ### 25.03.19@Königstuhl
-- [ ] F30: Stellare CCD-Photometrie (Stellar CCD photometry)
+- [x] F30: Stellare CCD-Photometrie (Stellar CCD photometry)
 - [ ] Evaluation: long report
 - [ ] Presentation

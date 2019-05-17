@@ -123,7 +123,7 @@ Repeated cycles of converting kinetic energy to potential energy, and subsequent
 
   measure spectrum of cooler laser and repumper laser -> analyse best of the 2
 
-  **TODO Evaluation:**
+  ** [Evaluation](https://github.com/anananlyjlyj/physics-FP-Uni-HD/blob/master/F20%20Magneto-optical%20Trap/Part%20I.ipynb):**
 
   * [All peaks](https://raw.githubusercontent.com/anananlyjlyj/physics-FP-Uni-HD/master/F20 Magneto-optical Trap/Part I/All_Peaks.bmp)
 
@@ -206,14 +206,11 @@ Where do you see the best loading rate?
 
 [Data](https://github.com/anananlyjlyj/physics-FP-Uni-HD/tree/master/F20 Magneto-optical Trap/Part II)
 
-### 3. Evaluation
+### 3. [Evaluation](https://github.com/anananlyjlyj/physics-FP-Uni-HD/blob/master/F20 Magneto-optical Trap/Part II.ipynb)
 
-[Eva](https://github.com/anananlyjlyj/physics-FP-Uni-HD/blob/master/F20 Magneto-optical Trap/Part II.ipynb)
-
-**TODO Discussion:**
+**Discussion:**
 
 * Are the loss coefficients constant? What would it mean if they were dependent on the atom number? What is the behaviour in detuning?
-* Plots interpretation
 
 ## Part IV: Release and recapture measurements
 
@@ -229,10 +226,18 @@ Choose the detuning and the magnetic field gradient that gave you the best loadi
 
 [Evaluation](https://github.com/anananlyjlyj/physics-FP-Uni-HD/blob/master/F20%20Magneto-optical%20Trap/Part%20III.ipynb)
 
-**TODO Discussion:**
+**Discussion:**
 
 * Is the calculated temperature compatible with the one that you expected to achieve?
-* Plots interpretation
 
+## Discussion with tutor:
 
+* Part I
+  * The temperature calculated from FWTH of Gaussian we fit in Part II for every valley is ~460 K, which is much warmer than we expected(room temperature). -> Because the curve we got is essentially overlap of three Gaussians, which is actually a complicated function, can not be simply described by a single Gaussian. 
+* Part II
+  * We expect $\alpha$ being approximately constant for different detuning, $L$ increases not any more for large detuning. However, our fits tell somehow a different story.  -> The data we measured for large detuning should have gone further into plateau so that the fit parameter could  behaved better. 
+  * Atom number increases with B-gradient -> clear, since atoms are captured because of it.
+  * Bell-shape behaviour of atom number with respect to detuning -> complicated reasons. The formula of scattering rate(~depends on detuning) for converting voltage to atom number describes something else, not the bell-shape.
+* Part III
+  * Our fit: 113.35 $\mu$K. What we expect: without Sisyphus cooling the temperature should over Doppler limit (~144 $\mu$K). 
 

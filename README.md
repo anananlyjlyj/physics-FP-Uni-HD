@@ -36,7 +36,7 @@ Further tips & tricks for Jupyter Notebook see [Bringing the best out of Jupyter
 - [x]  Evaluation
 ### 12.03.2019@INF 226
 - [x]  F13: Lebensdauer von Myonen (Muon Lifetime)
-- [ ]  Evaluation
+- [x]  Evaluation
 ### 25.03.19@Königstuhl
 - [x] F30: Stellare CCD-Photometrie (Stellar CCD photometry)
 - [ ] Evaluation: long report

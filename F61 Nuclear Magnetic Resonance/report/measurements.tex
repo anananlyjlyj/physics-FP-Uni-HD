@@ -1,23 +1,63 @@
 \section{Measurements and evaluation}\label{measurements-and-evaluation}
 
-\subsection{Calibration high frequencypulses}\label{calibration-high-frequency-pulses}
-
 \subsection{Measurement of relaxation time}\label{relaxation-time}
 
-\subsubsection{Measurement T\_2 by spin echo method}\label{t_2-by-spin}
-
-\subsubsection{Measurement T\_2 by Carr-Purcell sequence}\label{t_2-carr}
-
-\subsubsection{Measurement T\_1}\label{measurement-t_1}
-
-\subsubsection{Systematics of relaxation times for 2 probes}\label{2-probes}
-
+We measure $T_1$ and $T_2$ once with the spin echo method and $T_2$ again with the Carr-Purcell sequence for each Ga 500 and Ga 600.
+\begin{table}[h!]
+\centering
+\begin{tabular}{c||c|c|c}
+Substance  &  $T_{1,SE}$ & $T_{2,CP}$ & $T_{2,SE}$ \\
+\hline
+\hline
+Ga 500 & 68.1 & 66.1 & 62.4 \\
+\hline
+Ga 600 & 99.2 & 84.0 & 78.6 \\
+\end{tabular}
+\caption{Summary of relaxation time measurements in $ms$}
+\label{table1}
+\end{table}\\
+We can see 3 relations from these measurements: $T_{1} > T_{2}$ and $T_{2,CP} > T_{2,SE}$ for both substances as well as $T_{600} > T_{500}$ for each different method. The first can explained by %TODO .
+The second relation can be explained by looking at the effects of the Carr-Purcell method. This method minimizes the effects of the molecular diffusion and field inhomogeneities, which improves the precision of greater echo times.
+The third relation can be attributed to the fact that the Ga 500 has higher concentration which leads to a more %TODO .
+\vspace{2mm}\\
+From $\omega_L = 19.8$ MHz $\cdot 2\pi$ we can also calculate our external field $\vec{B_0}$. And with the characteristic time $\Delta t = 1.29\cdot 10^{-6}$ for a $90\degree$ pulse the solenoidal field $\vec{B_1}$ as well.
+\begin{equation}\label{b_0}
+	B_0 = \dfrac{\omega_L}{\gamma} = 0.48 T
+\end{equation}
+\begin{equation}\label{b_1}
+	B_1 = \dfrac{\alpha}{\Delta t \gamma} = 4.3 mT
+\end{equation}
+where $\gamma$ was the gyromagnetic factor mentioned at the beginning for protons.
 \subsection{Chemical shift}\label{chemical-shift}
 
-\subsubsection{3.1 Substances identification}\label{substances-identification}
-
-\subsubsection{Characteristics quantity of the experiment}\label{characteristics}
-
+We measure the peaks and determine which peak is the TMS. After that we calculate the shift with the given ppm of the .vi and appoint them to a substance from figure \ref{shi2} with the help of the provided cheat-sheet seen in figure \ref{shi1}. \\
+\begin{table}[h!]
+\centering
+\begin{tabular}{c||c|c|c|c|c}
+ & A+ & B+ & C+ & D+ & E+ \\
+\hline
+\hline
+$\Delta$(2nd - TMS) & 2.2 & 2.1 & 2.0 & 3.9 & 2.6 \\
+\hline
+$\Delta$(3rd - TMS) & 3.9 & 6.9 & 11.6 & 6.3 & 7.5 \\
+\hline
+$\Delta$(4th - TMS) & 6.3 &  &  &  & \\
+\hline
+\hline
+Substance & fluoroacetone & p-xylol & acetic acid & fluoroacetonitril & toluol \\
+\end{tabular}
+\caption{Summery of chemical shift in ppm}
+\label{table2}
+\end{table}\\
+Even though the resonance frequency of Flour is a lot higher than the frequency we are using here, we can see the peaks caused by the Flour. They appear because the of the spin-spin interaction between Flour and the proton(hydrogen) in FCH$_2$ which lead to 2 different states for the electrons. For both D+ and A+ we can see each of these peaks at 3.9 and 6.3 on both spectra.
+\vspace{2mm}\\
+From the width of these peaks we can additionally calculate the energy resolution of this measurement as well as the energy difference between the 2 different states FCH$_2$ can be in depending on the spin-spin interaction of the electrons.
+\begin{equation}\label{E_r}
+	\Delta E_{res} = f_{FWHM} \cdot h = 19.9 Hz \cdot 4.136eVs = 8 \cdot 10^{-14}eV
+\end{equation}
+\begin{equation}\label{E_d}
+	\Delta E_{dipole} = f_{\Delta F} \cdot h = 48 Hz \cdot 4.136eVs = 2 \cdot 10^{-13}eV
+\end{equation}\\
 \subsection{Imaging with NMR}\label{imaging-with-nmr}
 
 \subsubsection{1d imaging}\label{d-imaging}

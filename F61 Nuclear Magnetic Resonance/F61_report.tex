@@ -8,8 +8,11 @@
 
 %normal packages
 \usepackage{amsmath} 
+\usepackage{gensymb} %degree symbols 
 \usepackage{amsfonts}
 \usepackage{graphicx}
+\usepackage{wrapfig} %grapgics next to text
+\usepackage{subcaption} %multiple graphics in one figure
 \usepackage{hyperref}
 
 %layout
@@ -22,14 +25,13 @@
 \input{report/titlepage}
 \newpage
 \pagenumbering{arabic}
-%\tableofcontents
+\tableofcontents
+\listoffigures
 \newpage
 \input{report/introduction}
 \newpage
 \input{report/layout}
-\newpage
 \input{report/measurements}
-\newpage
 \input{report/discussion}
 \newpage
 %TODO : Biblography

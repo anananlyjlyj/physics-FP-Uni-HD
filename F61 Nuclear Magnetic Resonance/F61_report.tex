@@ -13,6 +13,8 @@
 \usepackage{graphicx}
 \usepackage{wrapfig} %grapgics next to text
 \usepackage{subcaption} %multiple graphics in one figure
+\usepackage[style=numeric-comp, backend=biber]{biblatex}
+\bibliography{report/reference}
 \usepackage{hyperref}
 
 %layout
@@ -21,7 +23,6 @@
 
 
 \begin{document}
-
 \input{report/titlepage}
 \newpage
 \pagenumbering{arabic}
@@ -34,5 +35,5 @@
 \input{report/measurements}
 \input{report/discussion}
 \newpage
-%TODO : Biblography
+\printbibliography
 \end{document}

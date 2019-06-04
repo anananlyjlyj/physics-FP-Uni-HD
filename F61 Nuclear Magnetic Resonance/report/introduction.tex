@@ -15,7 +15,7 @@ The magnetization of $N$ nuclei can be obtained, by summing over all nuclei per 
 With the assumption of a weak field $(\mu B << kT)$, which is the case in our experiment, one can approximate $\vec{M} \sim \frac{\vec{B_{0}}}{T}$ according to Curie's Law. 
 \vspace{5mm} \\
 In general, the magnetization can have an arbitrary direction relative to the external field. In the following we will decompose it into the components $\vec{M_{\parallel}}$ (anti-)parallel and $\vec{M_{\perp}}$ perpendicular to the external field. 
-The magnetic dipole interacts with the $\vec{B_{0}}$ and as a result the general state of magnetization will dissipate it's excitation energy and reach the ground state,i.e. $\vec{M_{\parallel}}$, asymptotically on a characteristic time scale. The dissipated energy can be expressed by
+The magnetic dipole interacts with the $\vec{B_{0}}$ and as a result the general state of magnetization will dissipate it's excitation energy and reach the ground state, i.e. $\vec{M_{\parallel}}$, asymptotically on a characteristic time scale. The dissipated energy can be expressed by
 \begin{equation}
 	\label{5}
 	\Delta E = - \vec{\mu} \cdot \vec{B_0}
@@ -73,7 +73,7 @@ There are 2 methods for measuring $T_2$, which use similar techniques. First let
 \begin{figure}[h!]
 	\centering
 	\includegraphics[scale=0.53]{images/spin_echo.png}
-	\caption{Dephasing of transverse magnetization $\vec{M_{\perp}}$}
+	\caption{Dephasing of transverse magnetization $\vec{M_{\perp}}$} taken from \cite{manual}
 	\label{spin-spin}
 \end{figure} \\
 $\omega_a$ and $\omega_b$ are denoting 2 protons which experience different $\omega_L$'s, which is caused by the inhomogeneities of the external $\vec{B_0}$.\\
@@ -87,12 +87,12 @@ Spin-latice relaxation is caused by the interaction between the magnetic dipoles
 	\label{16}
 	M_{\parallel}(t) = M_{0}(1-2e^{-\frac{t}{T_{1}}}).
 \end{equation}
-We measure $T_1$ also with the spin-echo method. But this time we start at $t=0$ with a $180\degree$ pulse and follow up after $t=\tau$ with a $90\degree$ pulse. We than measure the amplitude at $t=2\tau$ for different $\tau$ and expect the resulting curve to follow \eqref{16}.
+We measure $T_1$ also with the spin-echo method. But this time we start at $t=0$ with a $180\degree$ pulse and follow up after $t=\tau$ with a $90\degree$ pulse. We then measure the amplitude at $t=2\tau$ for different $\tau$ and expect the resulting curve to follow \eqref{16}.
 \subsection{Chemical shift}\label{chemShift}
 \begin{figure}[h]
 	\begin{subfigure}{0.5\textwidth}
 	\centering
-	\includegraphics[width=0.9\linewidth ,height=4cm]{images/ChemShift.png}
+	\includegraphics[width=0.7\linewidth ,height=4cm]{images/ChemShift.png}
 	\caption{Chemical Shift $\delta_i$}
 	\label{shi1}
 	\end{subfigure}
@@ -101,7 +101,7 @@ We measure $T_1$ also with the spin-echo method. But this time we start at $t=0$
 	\caption{Substances to be sorted}
 	\label{shi2}
 	\end{subfigure}
-	\caption{Chemical Shift}
+	\caption{Chemical Shift taken from \cite{manual}}
 	\label{shi3}
 \end{figure}
 If a proton is bound by a molecule, it will experience a magnetic field that is weaker than the external magnetic field $\vec{B_0}$, since the electrons are shielding parts of it. This leads to a new resonance frequency $\omega_i$ for the proton bound by the molecule. This modified resonance frequency can be used to identify unknown substances. To do so, it is easiest to compare it to a reference substance which you can easily identify in a Fourier spectrum, since the whole frequency scale is dependent on $\vec{B_0}$ which means it's a relative scale and one can't use absolute frequency values. We are using Tetra-Methyl-Silan or TMS since its peak will always be clearly visible and in our case always be the peak on the most left. With the help of $\omega_{TMS}$ one can define a chemical shift
@@ -112,16 +112,16 @@ for different molecule parts in reference to TMS as shown above in figure \ref{s
 \subsection{Imaging with NMR}\label{imagening}
 Imaging with NMR is one of the most notable achievements of NMR. By adding a gradient to the external field $\vec{B_0}$ we create a coordinate dependency of the $B_0$ field, which implies a coordinate dependent $\omega_L$. There are two different approaches to determine the density of the NMR-active material of the probe in 1 dimension.
 \vspace{2mm}\\
-The first method is called frequency coding, where one has a fixed gradient over time and measures the  NMR signal in set times $t_n = n \Delta t$. Then one can do a discrete Fourier transform of the N measurements and gets a finite amount of $M_{\perp}(n \Delta z)$ for the different coordinates. 
+The first method is called frequency coding, where one has a fixed gradient over time and measures the  NMR signal in set times $t_n = n \Delta t$. Then one can do a discrete Fourier transform of the $N$ measurements and gets a finite amount of $M_{\perp}(n \Delta z)$ for the different coordinates. 
 \vspace{2mm}\\
 The second method is called phase coding, where one has a fixed time and determines the phase of the precession all at the same time $t = t_0$. From that you again get a discrete amount of data points with which you can do a discrete Fourier transform. 
 \vspace{2mm}\\
 The main difference between these two methods is the time needed to record the data needed. The first method requires $T_f = N \cdot \Delta t$ compared to the $T_{\Phi} = t_0$ for the second method.
 \vspace{3mm}\\
-For 2 dimensions you have to use a combination of both since you need to determine 2 coordinates with just 1 signal. First a slice gets selected which is used to derive the positional information. Then it does phase coding for a set gradient while measuring the NMR signal over time with a set time distance $t_m$. After finishing the frequency coding it changes the gradient, selects a slice again and does a phase coding again followed by a frequency coding. This process is repeated for $N$ different gradients, taking $M \Delta t$ for each gradient. That leads to$ N \times M$ data points which then can be transformed with a 2 dimensional Fourier transform into the image matrix of the object. One of the $N$ cycles is illustrated below \ref{2dfourier}.\\
+For 2 dimensions you have to use a combination of both since you need to determine 2 coordinates with just 1 signal. First a slice gets selected which is used to derive the positional information. Then it does phase coding for a set gradient while measuring the NMR signal over time with a set time distance $t_m$. After finishing the frequency coding it changes the gradient, selects a slice again and does a phase coding again followed by a frequency coding. This process is repeated for $N$ different gradients, taking $M \Delta t$ for each gradient. That leads to $N \times M$ data points which then can be transformed with a 2 dimensional Fourier transform into the image matrix of the object. One of the $N$ cycles is illustrated below \ref{2dfourier}.\\
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.7\linewidth ,height=7cm]{images/2d_fourier.png}
-	\caption{One of the N Loops needed for 2D Imaging}
+	\includegraphics[width=0.63\linewidth ,height=7cm]{images/2d_fourier.png}
+	\caption{One of the N Loops needed for 2D Imaging taken from \cite{manual}}
 	\label{2dfourier}
 \end{figure}

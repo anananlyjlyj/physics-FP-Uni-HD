@@ -9,3 +9,6 @@
 *.out
 *.dvi
 *.lof
+/F61 Nuclear Magnetic Resonance/F61_report.run.xml
+*.bcf
+*.tks

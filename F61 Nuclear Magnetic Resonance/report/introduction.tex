@@ -3,28 +3,28 @@
 Nuclear Magnetic Resonance (NMR), can only be observed for molecules with a non-zero magnetic dipole moment. For a given nuclei, whose spin $\vec{J}$ is unequal to 0, its magnetic dipole moment can be calculated as
 \begin{equation}
 	\label{1}
-	\vec{\mu} = \hbar \gamma \vec{J}.
+	\vec{\mu} = \hbar \gamma \vec{J}
 \end{equation}
 where $\gamma$ is the gyromagnetic factor. In this experiment we will look at exclusively protons, which have $\gamma_{proton} = 2.6752 \cdot 10^8 sec^{-1} Tesla^{-1}$.
 \vspace{3mm} \\
 The magnetization of $N$ nuclei can be obtained by summing over all nuclei per unit volume
 \begin{equation}
 	\label{2}
-	\vec{M} = \dfrac{1}{V} \sum^{N}_{i=1} \vec{\mu_i}
+	\vec{M} = \dfrac{1}{V} \sum^{N}_{i=1} \vec{\mu_i}.
 \end{equation}
 With the assumption of a weak field $(\mu B << kT)$, which is the case in our experiment, it can be approximated by $\vec{M} \sim \frac{\vec{B_{0}}}{T}$ according to Curie's Law. 
 \vspace{5mm} \\
-In general, the magnetization can have an arbitrary direction relative to external magnetic field. In the following we will decompose it into two components $\vec{M_{\parallel}}$ (anti-)parallel and $\vec{M_{\perp}}$ perpendicular to the external field. 
+In general, the magnetization can have an arbitrary direction relative to external magnetic fields. In the following we will decompose it into two components $\vec{M_{\parallel}}$ (anti-)parallel and $\vec{M_{\perp}}$ perpendicular to the external field. 
 The magnetic dipole interacts with $\vec{B_{0}}$ and as a result the general state of magnetization will dissipate its excitation energy and reach the ground state, i.e. $\vec{M_{\parallel}}$, asymptotically on a characteristic time scale. The dissipated energy can be expressed by
 \begin{equation}
 	\label{5}
-	\Delta E = - \vec{\mu} \cdot \vec{B_0}
+	\Delta E = - \vec{\mu} \cdot \vec{B_0}.
 \end{equation}
 \vspace{3mm} \\
 This interaction results in a torque and since $\vec{B_{0}}$ is parallel to $\vec{M_{\parallel}}$, the torque only acts on $\vec{M_{\perp}}$.
 \begin{equation}
 	\label{6}
-	\vec{\tau} = \vec{M} \times \vec{B_{0}}
+	\vec{\tau} = \vec{M} \times \vec{B_{0}}.
 \end{equation}
 Without a relaxation processes, the rate of change is given by
 \begin{equation}
@@ -62,7 +62,7 @@ In the laboratory system we can now write the equation \eqref{7} with \eqref{10}
 \end{equation}
 \begin{equation}
 	\label{13}
-	\dfrac{dM_{\parallel}(t)}{dt} = - \dfrac{M_{\parallel}(t)-M_{0}}{T_{1}} + ( \vec{B} \times \vec{M})_{\parallel}
+	\dfrac{dM_{\parallel}(t)}{dt} = - \dfrac{M_{\parallel}(t)-M_{0}}{T_{1}} + ( \vec{B} \times \vec{M})_{\parallel}.
 \end{equation}
 \subsubsection{Spin-spin relaxation time $T_{2}$}
 Spin-spin relaxation is caused by the interaction between different magnetic dipoles and it contributes to the transverse magnetization. This relaxation process is described by \eqref{12}, which is solved by 
@@ -107,7 +107,7 @@ We measure $T_1$ also with the spin-echo method. But this time we start at $t=0$
 \end{figure}
 If a proton is bound by a molecule, it will experience a magnetic field that is weaker than the external magnetic field $\vec{B_0}$ because of the shielding effect of electrons. This leads to a modified resonance frequency $\omega_i$ for the proton. This frequency can be then used to identify unknown substances. To do so, it is easiest to compare it to a reference substance, which can be easily identified in a Fourier spectrum, since the whole frequency scale is dependent on $\vec{B_0}$, i.e. a relative scale, and absolute frequency values can't be used. We are using Tetra-Methyl-Silan (TMS), since its peak is always clearly visible and in our case always be the peak on the most left. With the help of $\omega_{TMS}$ one can define a chemical shift
 \begin{equation}\label{deltashift}
-	\delta_i = \frac{\omega_{TMS}-\omega_{i}}{\omega_{L}}
+	\delta_i = \frac{\omega_{TMS}-\omega_{i}}{\omega_{L}}.
 \end{equation} 
 for different molecular parts in reference to TMS as shown above in figure \ref{shi1}. In this experiment we want to identify the substances in figure \ref{shi2} from 5 different probes. \\
 \subsection{Imaging with NMR}\label{imagening}
@@ -122,7 +122,7 @@ The main difference between these two methods is the time needed to record data 
 For 2 dimensions a combination of both is used since with just 1 signal 2 coordinates should be determined. First a slice gets selected which is used to derive the positional information.  Then the phase coding gradient is applied, afterwards the NMR signal is measured in steps of $t_m$. After finishing the frequency coding it changes the gradient, selects a slice again and does a phase coding again followed by a frequency coding. This process is repeated for $N$ different gradients, taking $M \Delta t$ for each gradient. That leads to $N \times M$ data points which then can be transformed with a 2 dimensional Fourier transform into an image matrix of the object. One of the $N$ cycles is illustrated in figure \ref{2dfourier}.\\
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.63\linewidth ,height=7cm]{images/2d_fourier.png}
+	\includegraphics[width=0.59\linewidth ,height=6.5cm]{images/2d_fourier.png}
 	\caption{One of the N Loops needed for 2D Imaging taken from \cite{manual}}
 	\label{2dfourier}
 \end{figure}

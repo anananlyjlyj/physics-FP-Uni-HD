@@ -1,6 +1,6 @@
 # F30 Stellar CCD Photometry
 
-- [F30 instruction](http://www.kip.uni-heidelberg.de/fp-computer/fp75/fp30.pdf)
+- [F30 instruction](https://svn.mpia.de/trac/gulli/king/attachment/wiki/WikiStart/FP30Doc/Anleitung_F30.pdf)
 
 - Literature: 
 

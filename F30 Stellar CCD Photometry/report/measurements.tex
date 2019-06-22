@@ -1,13 +1,37 @@
 \section{Measurement and Evaluation}
 \subsection{Characteristics of the CCD}
+We first investigate characteristics of the CCD in the KING telescope with the help of program \textit{clearsky} on the Linux PC there. We visualize and analysis the data image using \textit{Python} with package \textit{astropy} and \textit{ccdproc}.
 \subsubsection{Bias correction}
-\subsubsection{Dark measure}
+As explained in introduction part, we first determined the bias from the overscan region on the right edge of CCD images of dark measurements. The overscan region is not a physical part of the CCD chip but is added electronically to the image for offset values. Figure ? take the first and last images as examples, where the right panels show the overscan region we chosen using display program \textit{ds9}. Read off the median we get, for example, bias of the first image $2029.0 \pm 1444.8$  of the last image $1350.0 \pm 1.7$. 
+
+\subsubsection{Dark measurements}
+After subtracting bias from the dark measurements we read scatter for the first image $52234.0\pm 3161.9$, for the last image $0.0 \pm 3.5$. We see from the result of the last image that under that temperature the CCD works, the dark current is small enough to ignore. To minimize the effects of dark currents is also the reason for cooling process, for dark currents diminishing the dynamical range and deteriorating the sensitivity of the system by its stochastic nature. 
+
+We carried out dark measurements while cooling the CCD using liquid nitrogen. With simultaneous temperature measurements we can verify the theoretical dependency of the dark current $I$ from the temperature $T$, derived from Fermi statistics: 
+\begin{equation}
+\label{Flux}
+	I = const.\times T^{3/2} e^{-\frac{E_g}{2k_BT}}
+\end{equation}
+where Boltzmann constant $k_B = 8.617 \cdot 10^{-5} \frac{eV}{K}$ and $E_g$ is the band gap of the semiconductor. The data, with temperature in logarithmic scale, are plotted in figure ?, where a straight line is fitted by the linear region using this formula. On the same plot, the theoretical model is plotted. From the fit parameters we determine the band gap of silicon as $1.1205 \pm 0.0061$ eV, while the literature value is given as $1.15$ eV. The $5\sigma$ deviation can be explained by ...
+
 \subsubsection{Flat-field correction}
+We chose to use dome-flat. First we subtract the bias from the individual flat-field images and then combine the individual flat-field images to a single image (the master flatfield). Then we normalize the master flat-field by dividing it by its median (why?) and obtain a histogram for this master flatfield as shown in figure ?. 
+
+We performed a flat-field correction for one of the single flat-field images with I filter. The comparison of two plots is shown in figure ?, as can be seen that after correction the whole image become "flat", i.e. evenly distributed. 
+
+After flat-field correction we could quantify the instrumental sensitivity, limitations, linearity and dynamical range.
 \subsubsection{Linearity and dynamical range}
+To verify the linearity of the chip we plot the signal of each flat-field-corrected image against its integration time. Figure ? shows for R band on the left, for I band on the right. To determine the deviation from a perfect linear relationship we calculated for the linear fit $R^2 = 0.999977$ for R band, $R^2 = 0.999901$ for I band. We can also read form the plot that for a gain factor of 5 the detector saturates at approximately $64160.3$ counts for R band, at approximately $64141.4$ counts for I band.
+TODO for discussion: also see the exposure time for saturation differ with different filter, thus careful change the intensity when use dome flat. 
 \subsubsection{Sensitivity and noise}
-\subsection{Color magnitude diagram(CMD) of globular cluster M90}
+TODO: Auswertung eigentlich nicht fertig!!!
+
+\subsection{CMD of globular cluster M90}
 \subsubsection{Zeropoint calibration}
+
 \subsubsection{PSF fitting}
+
 \subsubsection{Cross-match fitting results}
+
 \subsubsection{Plot CMD and fit isochrones}
-From the fit we can estimate the distance, age, and metallicity of the globular cluster.
+From the fit we can estimate the distance, age, and metallicity of the globular cluster. \ref{tab:table}

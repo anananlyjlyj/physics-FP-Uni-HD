@@ -2,7 +2,6 @@
 \subsection{Basics of CCD detectors} \label{ccd}
 \subsubsection{CCDs}
 Instead of photographic plates in earlier days people now widely use \textit{Charged coupled devices} (CCDs) for the detection of optical radiation, in visible light cameras and in modern telescopes. The working principle of CCD is as follows: Electrons produced by photoelectric effect are collected in the potential walls of the capacitors on a two-dimensional array of pixels made of semiconductors capacitors. The collected charges are first read out by being shifted column by column and sent to counting device (output register) at the end of each horizontal line, which is consisted of a series of electrodes. Then the signal is amplified and digitalized by an \textit{Analogue digital converter} (ADU). After calibrating and analysing numerical data one can reconstruct the distribution of observed astronomical objects.
-
 \subsubsection{Advantages and important characteristics of CCDs}
 CCDs are useful and powerful in following aspects:
 
@@ -24,33 +23,89 @@ CCDs are useful and powerful in following aspects:
 \subsection{Basics of astronomical data} \label{astrodata}
 \subsubsection{Data-influencing effects and corresponding measures}
 There are certain effects that influence data quality, people come up with different measures to deal with them:
-\paragraph{Noise and saturation}
+\paragraph{Noise and dynamic range}
 Despite of large dynamic range of CCDs it is not always possible to simultaneously assure a good S/N for weak objects of interest while not saturating very bright stars. Thus it is important to select exposure time carefully depending on purpose of observation.
 
 \paragraph{Extrema of data}
 A certain amount of pixels on the detector is "dead", i.e. produce no physically significant signal at all. The amount and distribution of pixels of this kind stays the same over time. Additionally some other pixels are activated by cosmic rays such as electrons, $\gamma$-rays, muons, etc. Around the impact position the pixels are saturated or show high numbers of counts. The distribution of these pixels is random and the number of them depends on integration time. To get rid of these extrema people use method called "dithering" or "jittering" by taking several exposures (at least 5) and the telescope is moved slightly between each exposure. The multiple frames are then aligned and the median of each pixel of the combined image is determined. With this method the S/N is also improved without saturating brighter sources.
 
 \paragraph{Diffraction by aperture}
-Light is diffracted when passing through apertures, the diffraction effects increase with decreasing aperture size. The degree of spreading (blurring) of a point object is a measure for the quality of an imaging systems, which is described with \textit{Point spread function} (PSF). For a diffraction-limited optical system operating in the absence of aberrations, i.e. a perfect lens with a uniformly illuminated circular aperture, the PSF is the Airy disc, a bright central region surrounded by concentric rings. In astronomy the Airy disc is used to determine the quality and alignment of the optical components of a telescope.
+Light is diffracted when passing through apertures, the diffraction effects increase with decreasing aperture size. The degree of spreading (blurring) of a point object is a measure for the quality of an imaging systems, which is described with \textit{Point spread function} (PSF). For a diffraction-limited optical system operating in the absence of aberrations, i.e. a perfect lens with a uniformly illuminated circular aperture, the PSF is the Airy disc, a bright central region surrounded by concentric rings. In astronomy the Airy disc is used to determine the quality and alignment of the optical components of a telescope. The Rayleigh criterion for barely resolving two objects is that the centre of the Airy disc for the first object occurs at the first minimum of the Airy disc of the second.
 
 \subsubsection{Data reduction}
 \paragraph{Bias}
+A bias, an offset added to each pixel value during read-out so that positive values are passed to analog-digital converter and get handled, should be subtracted from every image.
+
 \paragraph{Dark current}
+Dark current refers to signal produced when no photon reaching the CCD. Its strong temperature dependent value should be subtracted if not negligible.
+
 \paragraph{Flat fields}
+Different sensitivity of each pixels due to imperfect production of the CCD results in small scale variations. On the other hand, there exists large scale variations caused by the optics ("vignetting") and contaminations in the optical path. These variations, causing difficulties in comparing objects from different region, are however constant at least during the observation. For corrections one exposes the whole detector to a structureless and homogeneously emitting surface, i.e. flat field, and records the variations. In practice the flat field is provided either by a white surface hanging on the inner side of the dome(TODO: picture?) or the twilight sky. Though the twilight period is rather short, the sky-flatfield provides the same condition as real observation and is thus preferred. For the data reduction purpose one has to take multiple images and take median value for each pixel to create a master flat-field. Every measurement frame is then later divided by the normalized master frame. This procedure has to be done for every filter.
+
 \paragraph{Standard stars}
+People choose some stars as standard stars with determined luminosities. By comparing with them the measurements are calibrated. Sometimes special observation has to be made when standard stars are not located in the region where measurements are carried out.
 
 \subsection{Basics of photometry} \label{photometry}
-\subsubsection{Magnitudes}
-\paragraph{Apparent magnitude}
-\paragraph{Absolute magnitude}
-\paragraph{Barometric magnitude}
-\subsubsection{Observation of a star}
+With CCD people measure the radiation flux or intensity of an astronomical object reaching the earth. This process, photometry, uses the unit of magnitudes. 
 
-\subsubsection{Filter system}
-Johnson filter system 
-\paragraph{color index}
-\paragraph{color correction}
+\subsubsection{Magnitudes}
+The luminosity of a star $L$ is defined as emitted energy per unit time. The flux reaching an observer in a distance $d$ is given by $F=\frac{L}{4\pi d^4}$. The intensity is defined as flux per solid angle. 
+
+\paragraph{Instrumental magnitude}
+For measurements by the same instruments and under similar conditions, the comparison of different sources is realised by instrumental magnitudes. The measured counts are converted to a logarithmic scale with arbitrary zero point: $m_{instr.} = zero point -2.5 \log {counts}$. The counts is calculated either by simply summing over an aperture centered on the star, i.e. aperture photometry, or by fitting a PSF to the profile of the star, i.e. PSF photometry.
+\paragraph{Apparent magnitude}
+The brightness of stars perceived from earth, the apparent magnitude, was once classified by eye ranging from 1 for the brightest stars to 6 for barely visible stars. It was later quantified assuming a logarithmic perception. For the flux of two stars it means:
+\begin{equation}
+\label{Flux}
+	\frac{F_2}{F_1}=100^{(m_1-m_2)/5}
+\end{equation}
+With the help of standard stars the difference between instrumental magnitude and apparent magnitude is determined and observed magnitude is then calibrated. The effects of different instruments and circumstances for comparison of magnitudes are hence eliminated.
+\paragraph{Absolute magnitude}
+To compare objects in different distance people define absolute magnitude as apparent magnitude $M$ of an object would have if it were in distance of 10 pc from our sun. The relation between apparent and absolute magnitude satisfies 
+\begin{equation}
+\label{AppAbs}
+	\frac{F_{in 10 pc}}{F}=(\frac{d}{10 pc})^2=100^{(m-M)/5}
+\end{equation}
+with $d$ distance of star in pc. 
+
+However, $d$ is usually unknown, and can be determined in this way $d = 10^{(m-M+5)/5}$. The expression $m-M=5 \log_{10}{d} - 5$ is called the distance modulus. 
+
+From the absolute magnitude of a star at the same distance as a reference star with known luminosity and absolute magnitude, it's possible to determine its luminosity:
+\begin{equation}
+\label{Lumi}
+	\frac{F_2}{F_1}=\frac{L_2}{L_1}=100^{(M_1-M_2)/5}
+\end{equation}
+
+\paragraph{Barometric magnitude}
+The barometric magnitudes  $M_{bol}$ corresponds to the flux integrated over all wavelengths. Its direct measurements are only possible by space observatories. From earthbound observations people have only theoretical estimate because of detector limitations and atmosphere's absorption of certain wavelength. Alternatively a wavelength dependent magnitude $M_{\gamma}$ for luminosity in a certain wavelength range is used.
+
+\subsubsection{Observation of a star}
+Through observation people want to learn physical properties of a star. The flux is related to star's surface temperature, given by Stefan-Boltzmann law: $F=\sigma T_{eff}^4$ with $\sigma = 5.67\times10^{-8}$ Wm$^{-2}$K$^{-4}$ Stefan-Boltzmann constant, $T_{eff}$ the temperature of a black body emitting the same radiation power. Furthermore people are also interested in star's mass and metallicity, from which its evolution can be deduced. "Metals" in astronomy are all the elements besides H, He and their isotopes. It is however not trivial to calculate a star's mass from easily accessible observables.
+
+\subsection{Basics of spectroscopy}
+Spectroscopy is the measurement of the special intensity of the emitted light with high accuracy. 
+\paragraph{Johnson filter system}
+Filters that transmit a certain part of the spectrum are used to obtain rough spectral information. A common used filter system is Johnson filter system with broad band filters, which contain U(ultraviolet), B(blue), V(visual(green)), R(red), I(infrared) and z(sharp infrared) filters.
+\paragraph{Color index}
+To quantify spectral properties color index is defined as difference between magnitudes with different filters: $m_B-m_V=M_B-M_V=B-V$ where magnitude can be replaced by filter name directly. For example, a star is bluer and thus hotter than another star.
+\paragraph{Color correction}
+To compare measurements with different filter systems a calibration with standard stars is applied. Assuming the transmission curve for the B filter is slightly different, the calibration of the instrumental magnitude can be calculated in a first order approach.
 
 \subsection{Relevant astronomy}
-\subsubsection{The Hertzsprung-Russel-Diagramm}
+\subsubsection{The Hertzsprung-Russel-Diagram (HRD)}
+At the beginning of last century, Hertzsprung and Russel used data of  photometrically measured stars, independently discovered the correlation between the spectral type, effective temperature and luminosity, as shown in Hertzsprung-Russel-Diagram (HRD){\ref:fig1}. The majority of the visible stars experiencing the phase of hydrogen burning locate in the "main sequence" diagonal region. Different regions in the diagram indicate different masses, distances, evolution phases of stars. For example, O stars refers to young, massive and luminous objects.
+
+\paragraph{Color-Magnitude-Diagram (CMD)}
+In practice it is often difficult to produce a HRD, instead a Color-Magnitude-Diagram (CMD) plotted with the apparent magnitude against a related color index, determined directly from observations with two filters, is used. A CMD provides also large amounts of important information as a HRD. 
+
 \subsubsection{Globular clusters}
+Globular clusters (GC), spherically collection of stars, are by now counted to the oldest objects found in the universe. The stars in GCs in our milky way are very metal poor, which indicates their formation in early stage of the universe when the interstellar matter was not enriched with heavier elements than hydrogen and helium. With about 150 GCs known, the distribution, velocity and composition of GCs provide information about the evolution of our galaxy. The age identification of GC shows however large errors and discrepancies with different measurements.
+\paragraph{CMD of GCs}
+GCs are well suited for the analysis with a HRD, since all their stars are located at the approximate same distance and have the same metallicity. The CMD of a GC has a characteristic form as seen in figure 2.
+
+\subsubsection{Conclusions drawn from diagram}
+\paragraph{Determining the age of a cluster by the turn off point}
+Assuming all stars within the cluster have similar ages, one can read off the age of the cluster from the CMD. Since massive and luminous at the top left end of the CMD burnt their hydrogen in their cores within short lifetime and turned into a red giant, the older a cluster is, the lower mass stars move from main sequence into the red giant branch. The shifts to stars with lower mass and luminosities, i.e. turn off point, whose position depends also on metallicity of the cluster, are good indicators for age of older clusters. For young clusters there may exists ambiguity. 
+
+\paragraph{Determining the distance of a cluster by shift of the main sequence}
+For stars in a GC, assuming they all are approximately at the same distance with same chemical composition as well as similar ages, the distance to cluster can be determined using a CMD. The position of the main sequence is compared to the position of a cluster with known distance. With some presumptions ignoring effects of different matallicities and of attenuation by interstellar dust, the distance modulus of the cluster can be deduced by the shifts. Alternatively it can be compared to predictions of its position by theoretical models, for example "isochrones", i.e. curve representing stars of the same age.

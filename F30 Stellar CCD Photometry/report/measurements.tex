@@ -9,29 +9,58 @@ After subtracting bias from the dark measurements we read scatter for the first 
 
 We carried out dark measurements while cooling the CCD using liquid nitrogen. With simultaneous temperature measurements we can verify the theoretical dependency of the dark current $I$ from the temperature $T$, derived from Fermi statistics: 
 \begin{equation}
-\label{Flux}
+\label{Eg}
 	I = const.\times T^{3/2} e^{-\frac{E_g}{2k_BT}}
 \end{equation}
 where Boltzmann constant $k_B = 8.617 \cdot 10^{-5} \frac{eV}{K}$ and $E_g$ is the band gap of the semiconductor. The data, with temperature in logarithmic scale, are plotted in figure ?, where a straight line is fitted by the linear region using this formula. On the same plot, the theoretical model is plotted. From the fit parameters we determine the band gap of silicon as $1.1205 \pm 0.0061$ eV, while the literature value is given as $1.15$ eV. The $5\sigma$ deviation can be explained by ...
 
 \subsubsection{Flat-field correction}
-We chose to use dome-flat. First we subtract the bias from the individual flat-field images and then combine the individual flat-field images to a single image (the master flatfield). Then we normalize the master flat-field by dividing it by its median (why?) and obtain a histogram for this master flatfield as shown in figure ?. 
+We chose to use dome-flat. First we subtract the bias from the individual flat-field images and then combine the individual flat-field images to a single image (the master flatfield). Then we normalize the master flat-field by dividing it by its median (why?) and obtain a histogram for this master flatfield as shown in figure ?. TODO: discussion for histogram
 
 We performed a flat-field correction for one of the single flat-field images with I filter. The comparison of two plots is shown in figure ?, as can be seen that after correction the whole image become "flat", i.e. evenly distributed. 
 
 After flat-field correction we could quantify the instrumental sensitivity, limitations, linearity and dynamical range.
 \subsubsection{Linearity and dynamical range}
-To verify the linearity of the chip we plot the signal of each flat-field-corrected image against its integration time. Figure ? shows for R band on the left, for I band on the right. To determine the deviation from a perfect linear relationship we calculated for the linear fit $R^2 = 0.999977$ for R band, $R^2 = 0.999901$ for I band. We can also read form the plot that for a gain factor of 5 the detector saturates at approximately $64160.3$ counts for R band, at approximately $64141.4$ counts for I band.
+To verify the linearity of the chip we plot the signal of each flat-field-corrected image against its integration time. Figure ? shows for R band on the left, for I band on the right. To determine the deviation from a perfect linear relationship we calculated for the linear fit $R^2 = 0.999977$ for R band, $R^2 = 0.999901$ for I band. We can also read from the plot that for a gain factor of 5 the detector saturates at approximately $64160.3$ counts for R band, at approximately $64141.4$ counts for I band.
 TODO for discussion: also see the exposure time for saturation differ with different filter, thus careful change the intensity when use dome flat. 
 \subsubsection{Sensitivity and noise}
 TODO: Auswertung eigentlich nicht fertig!!!
 
-\subsection{CMD of globular cluster M90}
-\subsubsection{Zeropoint calibration}
+\subsection{CMD of globular cluster BS90}
+We use archival images of the GC BS90 taken by the HST filters F555W (V) and F814W (I).\ref{script} We produce a CMD to estimate the distance, age, and metallicity of the cluster.
 
 \subsubsection{PSF fitting}
+To separate stars from background and noise and to find out the counts of individual stars we use the tool  \textit{starfinder} to perform PSF photometry, since PSFs of different stars overlap in crowded region and aperture photometry does not work. 
+
+\paragraph{Determination of the noise}
+We want starfinder to evaluate the noise from the data, taking the photon noise into account. TODO: Describe settings? We calculate the Gaussian noise with the standard parameters and plot the noise distribution in a histogram. figure: NOISE*histogram.gif. In the PSF fitting we then use a threshold setting relative to that noise.
+
+\paragraph{Determination of the PSF}
+We select 14 isolated, unsaturated stars. On a bounding box around the stars, an average PSF for the entire image is first created. Per editing we improve and optimize the PSF as seen in figure postprocessed.png.
+
+\paragraph{Determination of stellar flux by PSF fitting}
+All sources above a certain threshold(TODO: the value we used: 0.4 for I? 0.3 or 0.4 for V?) above the background level are detected as potential stars. All potential stars is then fitted with the PSF and the results of this fitting is subtracted from the science image. This step is performed iteratively. That way we can disentangle and correctly account for the flux of overlapping sources. Figure: FoundStars.fits
+
+TODO: add figures PSF*.png.
+
+\subsubsection{Zeropoint calibration}
+Since the measurements were carried out with two filters a calibration is needed in order to compare their results.
+
+We overplot the HST images with data base \textit{SIMBAD}. \ref{ZeropointCalibration.png} We select 12 reference stars \ref{StarsForZeropoint.png}, which were calibrated themselves from true standard stars, and note the V- and I- magnitudes, and measure the counts in both Hubble images. The instrumental magnitude is compared with the CATALOG objects to calculate the individual zero points for all objects for both filters according to formula:
+\begin{equation}
+\label{calibration}
+	zeropoint = m_{CATALOG} + 2.5 \log_{10}{(counts)}
+\end{equation}
+We take the median as final zero point values, for V filter $25.15702$, for I filter $25.14337$. \ref{0point_calib.xlsx} 
+
+The apparent magnitude of found stars by PSF fitting can then be calculated by formula (1) with the calibrated zero points.
 
 \subsubsection{Cross-match fitting results}
+Two lists we obtained by PSF fitting should be cross-matched, so that the V-I value can be calculated for plotting CMD. Using the given Python scripts we restrict to stars from V- and I-images which located from each other within distance of 1 pixel. 
 
 \subsubsection{Plot CMD and fit isochrones}
-From the fit we can estimate the distance, age, and metallicity of the globular cluster. \ref{tab:table}
+We plot V vs. V-I of these stars and thus obtain the CMD of BS90. Then we overplot it with a set of theoretical isochrones using the given Python script in which we can play with the fit parameters, i.e. age, metallicity values, and the right shift in the V axis, which gives us the distance to the cluster.
+Briefly discuss your settings and results for the zero point determination and the PSF fitting.
+Include a plot of your CMD with the best-fitting isochrone(s) and discuss the results of your distance and age determinations (e.g., comparison to literature values). \ref{tab:table}
+
+TODO: make better fit? add figures.

@@ -30,7 +30,7 @@ Further tips & tricks for Jupyter Notebook see [Bringing the best out of Jupyter
 - [x]  Evaluation
 ### 20.02.2019@INF 226
 - [x]  F61/F62: Kernresonanzspektroskopie (Nuclear Magnetic Resonance)
-- [ ]  Evaluation: short report
+- [x]  Evaluation: short report
 ### 04.03.2019@INF 226
 - [x]  F20: Magnetooptische Falle (Magneto-optical Trap)
 - [x]  Evaluation

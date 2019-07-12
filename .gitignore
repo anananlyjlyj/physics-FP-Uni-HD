@@ -12,3 +12,4 @@
 /F61 Nuclear Magnetic Resonance/F61_report.run.xml
 *.bcf
 *.tks
+/F30 Stellar CCD Photometry/Template Scripts/darks-bias/

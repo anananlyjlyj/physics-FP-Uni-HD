@@ -8,29 +8,40 @@
 
 %normal packages
 \usepackage{amsmath} 
+\usepackage{gensymb} %degree symbols 
 \usepackage{amsfonts}
 \usepackage{graphicx}
+\usepackage{wrapfig} %grapgics next to text
+\usepackage{subcaption} %multiple graphics in one figure
+\usepackage[
+	style=numeric-comp,
+	%style=alphabetic,
+	%citestyle=authoryear,
+	backend=biber]{biblatex}
+\bibliography{report/biblography}
 \usepackage{hyperref}
 
 %layout
-\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]
-{geometry}
+\usepackage[
+	left=2cm,
+	right=2cm,
+	top=2cm,
+	bottom=2cm]{geometry}
 
 
 \begin{document}
-
 \input{report/titlepage}
 \newpage
 \pagenumbering{arabic}
-%\tableofcontents Makes sense or not?
+\tableofcontents
+\newpage 
+\listoffigures
 \newpage
 \input{report/introduction}
-\newpage
 \input{report/layout}
 \newpage
 \input{report/measurements}
-\newpage
 \input{report/discussion}
 \newpage
-%TODO biblography
+\printbibliography[heading=bibintoc, title={References}]
 \end{document}

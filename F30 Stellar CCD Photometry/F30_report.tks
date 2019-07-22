@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TexmakerSession quickmode="3">
-    <document bookmark2="0" bookmark3="0" master="false" hasfocus="false" bookmark1="0" line="18" file="C:/Users/Color/Documents/physics-FP-Uni-HD/F30 Stellar CCD Photometry/report/titlepage.tex"/>
-    <document bookmark2="0" bookmark3="0" master="false" hasfocus="false" bookmark1="0" line="0" file="C:/Users/Color/Documents/physics-FP-Uni-HD/F30 Stellar CCD Photometry/report/layout.tex"/>
-    <document bookmark2="0" bookmark3="0" master="false" hasfocus="false" bookmark1="0" line="0" file="C:/Users/Color/Documents/physics-FP-Uni-HD/F30 Stellar CCD Photometry/report/measurements.tex"/>
-    <document bookmark2="0" bookmark3="0" master="false" hasfocus="false" bookmark1="0" line="0" file="C:/Users/Color/Documents/physics-FP-Uni-HD/F30 Stellar CCD Photometry/report/introduction.tex"/>
-    <document bookmark2="0" bookmark3="0" master="false" hasfocus="false" bookmark1="0" line="0" file="C:/Users/Color/Documents/physics-FP-Uni-HD/F30 Stellar CCD Photometry/report/discussion.tex"/>
-    <document bookmark2="0" bookmark3="0" master="true" hasfocus="true" bookmark1="0" line="23" file="C:/Users/Color/Documents/physics-FP-Uni-HD/F30 Stellar CCD Photometry/F30_report.tex"/>
+<TexmakerSession quickmode="12">
+    <document bookmark2="0" bookmark1="0" hasfocus="true" line="3" file="C:\Users\Color\Documents\physics-FP-Uni-HD\F30 Stellar CCD Photometry\F30_report.tex" master="true" bookmark3="0"/>
+    <document bookmark2="0" bookmark1="0" hasfocus="false" line="4" file="C:/Users/Color/Documents/physics-FP-Uni-HD/F30 Stellar CCD Photometry/report/measurements.tex" master="false" bookmark3="0"/>
+    <document bookmark2="0" bookmark1="0" hasfocus="false" line="172" file="C:/Users/Color/Documents/physics-FP-Uni-HD/F30 Stellar CCD Photometry/report/introduction.tex" master="false" bookmark3="0"/>
+    <document bookmark2="0" bookmark1="0" hasfocus="false" line="5" file="C:/Users/Color/Documents/physics-FP-Uni-HD/F30 Stellar CCD Photometry/report/discussion.tex" master="false" bookmark3="0"/>
+    <document bookmark2="0" bookmark1="0" hasfocus="false" line="0" file="C:/Users/Color/Documents/physics-FP-Uni-HD/F30 Stellar CCD Photometry/report/layout.tex" master="false" bookmark3="0"/>
+    <document bookmark2="0" bookmark1="0" hasfocus="false" line="24" file="C:/Users/Color/Documents/physics-FP-Uni-HD/F30 Stellar CCD Photometry/report/titlepage.tex" master="false" bookmark3="0"/>
+    <document bookmark2="0" bookmark1="0" hasfocus="false" line="43" file="C:/Users/Color/Documents/physics-FP-Uni-HD/F30 Stellar CCD Photometry/report/biblography.bib" master="false" bookmark3="0"/>
 </TexmakerSession>
